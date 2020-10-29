@@ -8,7 +8,7 @@
 <meta name="keywords" content="forkun个人博客">
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#000">
-<title>Gridea</title>
+<title>forkun</title>
 <link rel="stylesheet" href="/media/css/gemini.css">
 <link rel="stylesheet" href="/media/fonts/font-awesome.css">
 <link
@@ -57,7 +57,7 @@
         <div class="site-title">
           
             <a href="/" class="brand">
-              <span>Gridea</span>
+              <span>forkun</span>
             </a>  
           
         </div>
@@ -151,19 +151,19 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">3</span>
+        <span class="site-item-stat-count">28</span>
         <span class="site-item-stat-name language" data-lan="article">文章</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="">
-        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-count">20</span>
         <span class="site-item-stat-name language" data-lan="category">分类</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="/tags/">
-        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-count">20</span>
         <span class="site-item-stat-name language" data-lan="tag">标签</span>
       </a>
     </div>
@@ -215,7 +215,7 @@
             <div class="friends-note">
               <p><strong class="language" data-lan="format">友链格式：</strong></p>
               <ul>
-                <li><span class="language" data-lan="site-name">网站名称：</span>Gridea</li>
+                <li><span class="language" data-lan="site-name">网站名称：</span>forkun</li>
                 <li><span class="language" data-lan="site-link">网站地址：</span><a href="https://forkun.github.io" data-pjax-state="">https://forkun.github.io</a></li>
                 <li><span class="language" data-lan="site-desc">网站描述：</span>温故而知新</li>
                 <li><span class="language" data-lan="site-img">网站头像：</span>
@@ -425,83 +425,2120 @@
     <div class="result" id="result">
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/uoWWArDxl/"" data-c="
-          &lt;h3 id=&#34;我的测试的工具图片&#34;&gt;我的测试的工具图片&lt;/h3&gt;
-&lt;h4 id=&#34;在工具中测试图片&#34;&gt;在工具中测试图片&lt;/h4&gt;
-&lt;pre&gt;&lt;code&gt;这段是测试的代码
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/amSlchIlb/"" data-c="
+          &lt;p&gt;win10 有次升级之后，碰到远程连接报错，错误信息***&lt;br&gt;
+出现身份验证错误。要求的函数不支持。...这可能是由于CredSSP加密Oracle修正。*** 看错误，以为是自己账号密码错误，验证了好久没能解决。网上搜索到好多种解决方案。例如：修改注册表、卸载安装的补丁等等，都没能解决我遇到的问题。&lt;/p&gt;
+&lt;p&gt;真实通过验证解决问题的方案，记录作为备用。&lt;/p&gt;
+&lt;h4 id=&#34;问题&#34;&gt;问题&lt;/h4&gt;
+&lt;p&gt;win10升级之后，远程连接的时候，报错&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://forkun.github.io/post-images/1603960645936.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h4 id=&#34;解决方案&#34;&gt;解决方案&lt;/h4&gt;
+&lt;p&gt;原理是修改组策略，降低保护解决。解决方案比较粗暴，并没有从根本上解决问题，但对于本地安全要求不高的，是一种比较简单的解决方案&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Win + R&lt;/code&gt;打开运行运行窗口，输入：&lt;code&gt;gpedit.msc&lt;/code&gt;打开本地组策略编辑器&lt;br&gt;
+&lt;img src=&#34;https://forkun.github.io/post-images/1603960653469.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;双击***加密Oracle修正***，将保护级别改为：“易受攻击”&lt;br&gt;
+&lt;img src=&#34;https://forkun.github.io/post-images/1603960659574.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+">Win10 远程连接报错 credssp加密oracle修正</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/5UtJXApw2/"" data-c="
+          &lt;h5 id=&#34;说明&#34;&gt;说明&lt;/h5&gt;
+&lt;p&gt;最近在捣鼓docker，被他的独立运行应用的容器所迷恋，导致现在不管运行什么服务，第一印象都是想在docker中运行。&lt;/p&gt;
+&lt;p&gt;之前在本地安装过hexo的，运行没问题，现在想把hexo， 单独安装在docker中，通过docker容器，来管理我的博客。&lt;/p&gt;
+&lt;p&gt;大概的思路是：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;下载一个nodejs的镜像&lt;/li&gt;
+&lt;li&gt;安装hexo&lt;/li&gt;
+&lt;/ol&gt;
+&lt;!-- more --&gt;
+&lt;h5 id=&#34;问题&#34;&gt;问题&lt;/h5&gt;
+&lt;p&gt;由于之前自己的hexo博客，托管到git库了。所以这次的改动，从git库下载下来之后，直接在容器中运行的时候，遇到了兼容性问题（好久没有用过写博客了，中间断了2年，导致好多库老旧，没法使用）。&lt;/p&gt;
+&lt;p&gt;实在找不到问题，就重新创建了一个目录，然后重新&lt;code&gt;hexo init&lt;/code&gt;初始化项目。再将之前博客文件，拷贝到新的项目中，运行。&lt;/p&gt;
+&lt;h5 id=&#34;过程&#34;&gt;过程&lt;/h5&gt;
+&lt;h6 id=&#34;搭建hexo环境&#34;&gt;搭建hexo环境&lt;/h6&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;下载nodejs的官方镜像，选择alipine版本（alipine非常小，才4M左右）&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;docker pull node:10.15-alpine&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;创建&amp;amp;运行docker容器&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;docker run -dit -p 228:22 -p 4001:4000 --name blog_hexo -v D:/semir/www/dev/:/mnt --network my_network --ip 172.18.0.8 node:10.15-alpine /bin/sh
 &lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;过程中，将自己的博客的根目录，挂在到容器中&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;重新创建目录&amp;amp;初始化博客&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;gt; mkdir forkun_io
+&amp;gt; cd forkun_io
+&amp;gt; hexo init
+# 将之前的markdown文件，拷贝到项目目录：/source/_posts
+&amp;gt; hexo clean	# 清除之前的public文件
+&amp;gt; hexo generate
+&amp;gt; hexo server
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h6 id=&#34;配置next主题&#34;&gt;配置Next主题&lt;/h6&gt;
+&lt;ol&gt;
+&lt;li&gt;下载&lt;a href=&#34;http://theme-next.iissnan.com/&#34;&gt;Next&lt;/a&gt;主题文件（&lt;a href=&#34;https://github.com/iissnan/hexo-theme-next&#34;&gt;github&lt;/a&gt;）&lt;/li&gt;
+&lt;li&gt;将文件目录，拷贝到theme，然后项目配置文件中，指定next主题即可。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5 id=&#34;我的配置&#34;&gt;我的配置&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;项目启用next主题&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在项目配置文件（/_config.yml）theme 选项值，改为：next&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;开启资源文件夹自动生成功能&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在项目配置文件（/_config.yml）post_asset_folder 选项值，改为：true&lt;/p&gt;
+&lt;p&gt;该功能，主要是为了在文章中，引入图片的功能。开启该功能，在每次执行hexo new 创建md文件的时候，会同步创建一个该md文件名同名的文件夹，然后可以将文章中需要的图片，存入到该文件夹，再在文章中直接引用。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;开启该功能，需要同步安装hexo的扩展插件，才能在文章中使用：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;![音频默认控件样式](h5-audio-JS控制音乐开关/audio_demo.png)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在项目根目录执行：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;npm install hexo-asset-image --save
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;启用next主题的本地搜索功能：Local Search&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;npm install hexo-generator-searchdb --save&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;修改项目配置文件（/_config.yml），在任意位置添加开启搜索&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# search
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;修改主题配置文件（/theme/next/_config.yml），开启本地搜索&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# Local search
+local_search:
+  enable: true
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;开启tags&amp;amp;categories 聚合页&lt;/p&gt;
+&lt;p&gt;创建tags和categories聚合页的index.md&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hexo new page tags
+hexo new page categories
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;执行完该命令，会在/source/categories、/source/tags两个目录下创建index.md文件，该页面就是标签和分类的聚合页，然后需要做些修改，才能在&lt;code&gt;hexo generate&lt;/code&gt;的时候，自动抓取页面中的标签和分类。修改各自的index.md文件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# categories
+---
+title: categories
+date: 2018-12-28 08:30:32
+type: categories
+comments: false
+---
+
+# tags
+---
+title: tags
+date: 2018-12-28 08:30:19
+type: tags
+comments: false
+---
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;设置next主题的语法高亮&lt;/p&gt;
+&lt;p&gt;修改主题配置文件（/theme/next/_config.yml）文件，开启语法高亮的主题&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;highlight_theme: normal&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;修改项目配置文件（/_config.yml）文件，开启自动识别高亮关键词&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;highlight &amp;gt; auto_detect true&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5 id=&#34;常见问题&#34;&gt;常见问题&lt;/h5&gt;
+&lt;h6 id=&#34;hexo-部署报错&#34;&gt;hexo 部署报错&lt;/h6&gt;
+&lt;p&gt;错误信息：&lt;code&gt;ERROR Deployer not found: git&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;该错误的原因是hexo的git扩展未安装，执行：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;npm install --save hexo-deployer-git&lt;/code&gt;&lt;/p&gt;
+">Docker + Hexo 配置静态博客</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/SKH_uC8j2/"" data-c="
+          &lt;p&gt;使用laravel eloquent模型，进行数据的添加、编辑的时候，发现有些空值（&amp;quot;&amp;quot;）被转为了&lt;code&gt;null&lt;/code&gt;，而数据库中，字段的设置是：&lt;code&gt;not null default &#39;&#39;&lt;/code&gt; 这样就遇到了问题了。数据库中是&lt;code&gt;not null&lt;/code&gt;，而laravel却自动将在表单中没有录入的空值自动转化为&lt;code&gt;null&lt;/code&gt;，导致数据插入失败，数据库报错：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;SQLSTATE[23000]: Integrity constraint violation: 1048 Column &#39;descr&#39; cannot be null 
+(SQL: update `arc_cate` set `descr` = , `updated_at` = 2018-12-29 13:35:59 where `id` = 13)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- more --&gt;
+&lt;h5 id=&#34;解决方案&#34;&gt;解决方案&lt;/h5&gt;
+&lt;p&gt;理论上来说，要针对所有的输入，都要有个验证和判断，在遇到表单的输入空值的时候，需要为其设置一个默认的值。这种方案，个人认为是比较合理的，也是比较符合规范的，能保证对所有的输入都有个控制的。&lt;/p&gt;
+&lt;p&gt;另一种访问，是在laravel框架做改动了，在网上查找到说：&lt;code&gt;laravel 全局中间件下ConvertEmptyStringsToNull这个中间件，默认把空字符串转换为null&lt;/code&gt;。所以想着能控制这里，不要讲空值转null，就可以了。但是既然laravel官方将空值转为了null，就一定有其道理（虽然我不知）。&lt;/p&gt;
+&lt;p&gt;所以个人还是比较推崇第一种解决方案的。&lt;/p&gt;
+&lt;h6 id=&#34;关闭laravel空值转null的方案&#34;&gt;关闭laravel空值转null的方案&lt;/h6&gt;
+&lt;p&gt;改动文件：&lt;code&gt;/app/Http/Kernel.php&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;将公共的中间件&lt;code&gt;ConvertEmptyStringsToNull&lt;/code&gt;注释掉&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;protected $middleware = [
+    \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
+    \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
+    \App\Http\Middleware\TrimStrings::class,
+#	\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+    \App\Http\Middleware\TrustProxies::class,
+];
+&lt;/code&gt;&lt;/pre&gt;
+">Laravel Eloquent自动将空字符串解析为null报错</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/t5LByGVMQ/"" data-c="
+          &lt;p&gt;Nginx 常用命令汇总，留作自用。&lt;/p&gt;
+&lt;p&gt;Nignx常用的命令，在其安装目录的sbin目录下面。如果有将这些命令，加入到系统变量，或者已经拷贝到用户可执行的命令目录。直接执行常用的命令即可，否则最好是进入nginx安装目录的sbin目录执行。&lt;/p&gt;
+&lt;p&gt;简单记录nginx常用的启动、停止等：&lt;code&gt;nginx {start|restart|stop}&lt;/code&gt;&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h5 id=&#34;具体命令&#34;&gt;具体命令&lt;/h5&gt;
+&lt;h6 id=&#34;nginx-t&#34;&gt;&lt;code&gt;nginx -t&lt;/code&gt;&lt;/h6&gt;
+&lt;p&gt;监测ng的配置文件，例如域名配置等，每次启动或者重启ng之前，最好执行该命令，监测配置文件的正确性，已确保服务真正的能重启的来。否则可能服务无法重启&lt;/p&gt;
+&lt;h6 id=&#34;nginx-s-reload&#34;&gt;&lt;code&gt;nginx -s reload&lt;/code&gt;&lt;/h6&gt;
+&lt;p&gt;平滑重启ng服务，中间ng服务并不会停止。在reload的过程中，会重新加载配置文件使之生效，然后启动ng服务。&lt;/p&gt;
+&lt;h6 id=&#34;nginx-s-quit&#34;&gt;&lt;code&gt;nginx -s quit&lt;/code&gt;&lt;/h6&gt;
+&lt;p&gt;优雅停止nginx，有连接时会等连接请求完成再杀死worker进程&lt;/p&gt;
+">Nginx 常用命令</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/JVzOGWiGz/"" data-c="
+          &lt;h4 id=&#34;问题描述&#34;&gt;问题描述&lt;/h4&gt;
+&lt;p&gt;通过PHP，执行了一段针对MYSQL查询，然后件数据查询的结果写入到一个csv文件中，由于数据量非常大，通过WEB访问会存在超时的问题，所以程序执行是命令行下执行的。&lt;/p&gt;
+&lt;p&gt;在执行了很久之后，通过MYSQL控制台：&lt;code&gt;show processlist;&lt;/code&gt;命令，发现刚才执行的SQL已经完成了，但是csv文件，并没有生成。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h4 id=&#34;问题排查&#34;&gt;问题排查&lt;/h4&gt;
+&lt;p&gt;由于程序对容错性处理不是很好，所以执行没有看到任何的错误记录，只能通过PHP或者MYSQL的错误日志来排错&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;通过查看MYSQL错误日志文件： hostname.err文件，并没有找到任务的错误记录&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;发现PHP并没有记录PHP的执行日志，所以需要在php.ini中开启PHP的日志记录&lt;br&gt;
+&lt;code&gt;error_log = /usr/local/php/var/log/php.log&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;再次执行刚才的查询，在PHP的错误日志中发现：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;PHP Fatal error:  Allowed memory size of 23907532800 bytes exhausted (tried to allocate 88 bytes) in /path/1.php on line 2
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;错误提示PHP内存溢出。&lt;/p&gt;
+&lt;p&gt;最终得到结论：是由于MYSQL返回的数据太大，超出了PHP最大内存限制，导致程序&lt;/p&gt;
+&lt;h4 id=&#34;尝试方案&#34;&gt;尝试方案&lt;/h4&gt;
+&lt;p&gt;既然是PHP内存溢出，那就考虑在PHP端如果优化处理&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;*** 程序是Thinkphp开发的，执行SQL调用的是Thinkphp自带的query方法，通过追踪源码发现 ***&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;private function getResult()
+{
+    //返回数据集
+    $result        = $this-&amp;gt;PDOStatement-&amp;gt;fetchAll(PDO::FETCH_ASSOC);
+    $this-&amp;gt;numRows = count($result);
+    return $result;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;query最终调用了该方法，fetchAll查询的资源。一下子将所有的结果集赋给了$result变量。&lt;br&gt;
+这种方式，显然有问题，因此优化该方法，使自己的query请求调用原生PDO，通过while，每次处理一行结果集写入到csv文件&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$res_source = $link-&amp;gt;query($sql_info[&#39;sql&#39;]);
+$fp = fopen($csv_file, &#39;a&#39;);
+while ($row = $res_source-&amp;gt;fetch(PDO::FETCH_ASSOC)) {
+    fputcsv($fp, $row);
+    $i++;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;但是最终得到的结果，还是PHP内存溢出，没有成功。结果集让然是全部缓存到了内存中。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;*** 通过控制PHP对MYSQL的数据读取，每次逐行读取，而不是一次全发返回结果集。***&lt;br&gt;
+按照这个思路，通过网上查找资料，找到了一些说明资料，描述：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这个问题在PHP的官方网站上叫缓冲查询和非缓冲查询(Buffered and Unbuffered queries)。PHP的查询缺省模式是缓冲模式。也就是说，查询数据结果会一次全部提取到内存里供PHP程序处理。这样给了PHP程序额外的功能，比如说，计算行数，将指针指向某一行等。更重要的是程序可以对数据集反复进行二次查询和过滤等操作。但这种缓冲查询模式的缺陷就是消耗内存，也就是用空间换速度。&lt;br&gt;
+相对的，另外一种PHP查询模式是非缓冲查询，数据库服务器会一条一条的返回数据，而不是一次全部返回，这样的结果就是PHP程序消耗较少的内存，但却增加了数据库服务器的压力，因为数据库会一直等待PHP来取数据，一直到数据全部取完。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;最终找到了一个关于PHP操作MYSQL的原生函数：&lt;code&gt;mysql_unbuffered_query&lt;/code&gt;，PHP官方手册这样介绍该函数：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;mysql_unbuffered_query — 向 MySQL 发送一条 SQL 查询，并不获取和缓存结果的行&lt;br&gt;
+*** 说明 ***&lt;br&gt;
+resource mysql_unbuffered_query ( string $query [, resource $link_identifier ] )&lt;br&gt;
+mysql_unbuffered_query() 向 MySQL 发送一条 SQL 查询 query，但不像 mysql_query() 那样自动获取并缓存结果集。&lt;br&gt;
+一方面，这在处理很大的结果集时会节省可观的内存。另一方面，可以在获取第一行后立即对结果集进行操作，而不用等到整个 SQL 语句都执行完毕。&lt;br&gt;
+当使用多个数据库连接时，必须指定可选参数 link_identifier。&lt;br&gt;
+*** Note:  ***&lt;br&gt;
+mysql_unbuffered_query() 的好处是有代价的：在 mysql_unbuffered_query() 返回的结果集之上不能使用 mysql_num_rows() 和 mysql_data_seek()。此外在向 MySQL 发送一条新的 SQL 查询之前，必须提取掉所有未缓存的 SQL 查询所产生的结果行。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;所以我们在读取大量数据的时候，可以使用mysql_unbuffered_query()来替代mysql_query()。设置为非缓冲查询，设置方法：&lt;br&gt;
+修改PDO实例选项：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+/*
+ * Mysqli设置格式
+ * 通过对query方法设置：MYSQLI_USE_RESULT（只是读取了结果集的元信息）
+ * 另一种默认的方法是：MYSQLI_STORE_RESULT（把结果集从mysqlServer读到客户端）
+ */
+$mysqli = new mysqli($db_hosts, $db_user, $db_pwd, $db_name); 
+$uresult = $mysqli-&amp;gt;query(&amp;quot;select * from table_name&amp;quot;, MYSQLI_USE_RESULT); 
+
+/*
+ * PDO设置格式
+ * 通过对setAttribute，设置非缓冲查询
+ */
+$pdo = new PDO($db_dns, $db_user, $db_pwd);
+$pdo-&amp;gt;setAttribute(PDO::MYSQL_ATTR_USE_BUFFERED_QUERY, false);
+
+/*
+ * mysql设置格式
+ * 通过调用mysql_unbuffered_query方法，来替换query方法
+ */
+$connect = mysql_connect($db_hosts, $db_user, $db_pwd); 
+$db = mysql_select_db($db_name); 
+$result = mysql_unbuffered_query(&amp;quot;select * from table_name&amp;quot;); 
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;最终通过该方法，解决了PHP读大数据内存溢出，*** 最终成功写入CSV的文件的大小：388G，写入CSV文件行数：9亿多行 ***。&lt;/p&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+">PHP写大文件（数据库正常，PHP内存溢出）</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/819jbSRPm/"" data-c="
+          &lt;h4 id=&#34;概述&#34;&gt;概述&lt;/h4&gt;
+&lt;p&gt;在windows做开发的时候，发布上线的时候，总是由于运行环境的差异，而在线上发现一些不必要的问题，因此需要将本地的开发环境与线上运行环境一致，就可以避免这些问题。&lt;br&gt;
+在此技术上，考虑在window机器上搭建Linux环境，最常见的就是使用虚拟机。我使用的是vagrant来管理我的虚拟机，下面记录我搭建vagrant + vbox + centos的搭建过程。&lt;br&gt;
+该过程同样适用于其他的linux版本。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h4 id=&#34;安装软件&#34;&gt;安装软件&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;**** 下载安装最新版本的&lt;a href=&#34;https://www.vagrantup.com/downloads.html&#34;&gt;vagrant&lt;/a&gt; ****&lt;br&gt;
+下载页面中，有各种版本下的软件下载，特别需要注意的是，下载的时候会没有下载进度，估计是被墙了，最好能翻墙下载该软件。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;**** 下载安装最新版本的&lt;a href=&#34;https://www.virtualbox.org/wiki/Downloads&#34;&gt;VirtualBox&lt;/a&gt; ****&lt;br&gt;
+这个下载起来就比较快了，直接安装相应版本的vbox即可。&lt;br&gt;
+其实用vmware也可以来替代vbox的，但是个人感觉，vmware教vbox耗性能。自己试过，在同一个电脑上，安装vbox、vmware，vbox要比vmware快好多。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;**** 安装好vagrant之后，软件会将&lt;code&gt;vagrant&lt;/code&gt;命令，自动注册到系统变量，所以可以在命令行下直接执行&lt;code&gt;vagrant --version&lt;/code&gt;命令测试是否安装成功。****&lt;br&gt;
+截至目前位置，我们只是安装了容器软件，真正的linux系统并没有下载。通过vagrant来管理vbox的镜像包的话，有vagrant专用的box，自己下载的iso镜像文件，并不能用的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;**** 下载需要的版本的镜像包&lt;a href=&#34;http://www.vagrantbox.es/&#34;&gt;box&lt;/a&gt; ****&lt;br&gt;
+其实也可以不用手动下载镜像包，因为在&lt;code&gt;vagrant首先创建一个文件夹 box add&lt;/code&gt;的时候，也可以指定box包，直接在远程下载的。但是这个在国内的下载速度，也是非常慢的，所以，最好提前下载好，在&lt;code&gt;vagrant add box&lt;/code&gt;的时候，直接指定包的位置即可。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;安装linux系统&#34;&gt;安装Linux系统&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;**** 设定vbox默认虚拟电脑位置 ****&lt;br&gt;
+如果不设置虚拟电脑目录的话，系统安装linux的时候，会将linux文件，安装到vbox默认的windows系统盘。没必要无故占用系统盘空间。因此这里提前约束好。&lt;br&gt;
+&lt;img src=&#34;https://forkun.github.io/post-images/1603960203377.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;**** 创建vagrant的配置文件路径，该路径存放配置文件：Vagrantfile ****&lt;br&gt;
+该路径，是vbox内控制linux配置的文件：设置网络、设置共享文件夹、设置linux内存等。并且默认，该目录会被自动挂在到虚拟机内的linux中&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;**** 添加、初始化、运行 ****&lt;br&gt;
+进入上一步骤创建的路径目录。&lt;br&gt;
+在目录内使用：&lt;code&gt;vagrant box add linux_name box_path&lt;/code&gt;命令，添加box包到vagrant。linux_name是虚拟机内部linux系统名，是唯一标识vagrant中一个虚拟机的名字。box_path设置为刚才下载的box文件的全路径。&lt;br&gt;
+在目录内使用：&lt;code&gt;vagrant init&lt;/code&gt;命令，生成Vagrantfile配置文件。&lt;br&gt;
+执行：&lt;code&gt;vagrant up&lt;/code&gt;命令，初次安装。安装成功后，该命令启动系统。&lt;br&gt;
+截止到目前为止，虚拟机中的系统已经安装完成。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;常用的配置&#34;&gt;常用的配置&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;**** 网络设置 ****&lt;br&gt;
+关于网络设置，有3中设置：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;forwarded_port-端口映射：该模式是通过端口映射，来判别是访问主机，还是虚拟机。例如可以设置所有通过8989端口的访问，都映射到虚拟机内部的80端口：&lt;code&gt;config.vm.forwarded_port 80, 8989&lt;/code&gt;。该方式优点是简单，容易设置。容易实现外网访问虚拟机。但是对于有多个端口需要映射配置的时候，就很吃力了。不可能每次增加一个端口，就增加一个映射关系的。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;private_network-私有网路：我用的最多的也是这种网络，他只允许主机和虚拟机互通。同网络的其他主机，不能访问该虚拟机。&lt;code&gt;config.vm.network &amp;quot;private_network&amp;quot;, ip: &amp;quot;192.168.33.188&amp;quot;&lt;/code&gt;，该配置开启的时候，在&lt;code&gt;vagrant reload&lt;/code&gt;配置文件的时候，会在本机创建一个host-only的网络。其实这种方式就是虚拟机的&lt;code&gt;host-only&lt;/code&gt;模式。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;public_network-公用网络：和虚拟机一样，也是在内网的一个真实存在的机器，和其他主机可以相互访问。需要占用一个独立的IP：&lt;code&gt;config.vm.network &amp;quot;public_network&amp;quot;, ip: &amp;quot;192.168.1.120&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;**** SSH连接-登录-账号-启用root ****&lt;br&gt;
+默认的SSH登录的账号和密码是：&lt;code&gt;vagrant vagrant&lt;/code&gt;。我们可以通过xshell客户端，通过vagrant账号进入系统然后：&lt;code&gt;sudo paswd root&lt;/code&gt;命令，设置一个root账号的密码。&lt;br&gt;
+然后退出xshell，直接用root账号连接即可。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;**** 共享文件夹的设置 ****&lt;br&gt;
+系统默认会将刚才创建的配置文件的目录挂载到虚拟机内部的：/vagrant目录。常用的配置选项有：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;create(boolean)--可选：默认为false，若配置为true，挂载到虚拟机上的目录若不存在则自动创建。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;disabled(boolean)--可选：默认为false，若为true,则禁用该项挂载&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;owner(string):&#39;www&#39;--可选：虚拟机系统下文件所有者(确保系统下有该用户，否则会报错)，默认为vagrant&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;group(string):&#39;www&#39;--可选：虚拟机系统下文件所有组( (确保系统下有该用户组，否则会报错)，默认为vagrant&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;mount_options(array):[&amp;quot;dmode=775&amp;quot;,&amp;quot;fmode=664&amp;quot;]--可选：dmode配置目录权限，fmode配置文件权限  //默认权限777&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;type(string):--可选：指定文件共享方式，例如：&#39;nfs&#39;，vagrant默认根据系统环境选择最佳的文件共享方式&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;例如：需要如下配置：取消自动挂载的vagrant目录，将自动挂载的文件用户、用户组指定为：root，挂载的目录的权限设置为：775，可以做如下配置：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;config.vm.synced_folder &amp;quot;e:/www&amp;quot;, &amp;quot;/mnt/www&amp;quot;, owner: &amp;quot;root&amp;quot;, group: &amp;quot;root&amp;quot;, mount_options: [&amp;quot;dmode=775&amp;quot;,&amp;quot;fmode=664&amp;quot;]
+config.vm.synced_folder &amp;quot;.&amp;quot;, &amp;quot;/vagrant&amp;quot;, disabled:true
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;**** 设置虚拟机内存 ****&lt;br&gt;
+将下面注释的这行打开，并且做如下设置：&lt;pre&gt;&lt;code&gt;config.vm.provider &amp;quot;virtualbox&amp;quot; do |vb|
+	#vb.gui = true #这个选项可以不开启，控制vagrant启动的时候，是否启动vbox客户端。
+	vb.memory = &amp;quot;4096&amp;quot;	#占用内存大小。
+vb.memory = &amp;quot;4096&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;常用命令&#34;&gt;常用命令&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;vagrant box add &lt;name&gt;新增box包&lt;/li&gt;
+&lt;li&gt;vagrant box list 列出当前vagrant中的包&lt;/li&gt;
+&lt;li&gt;vagrant box remove &lt;name&gt;删除vagrant中的包&lt;/li&gt;
+&lt;li&gt;vagrant init 初始化配置文件&lt;/li&gt;
+&lt;li&gt;vagrant up 启动系统&lt;/li&gt;
+&lt;li&gt;vagrant reload 重启系统，会重新载入Vagrantfile配置文件，一般有配置文件更改的时候，执行该命令。&lt;/li&gt;
+&lt;li&gt;vagrant halt 关闭系统&lt;/li&gt;
+&lt;/ul&gt;
+">Vagrant 搭建 Linux</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/Q7QKXwcA0/"" data-c="
+          &lt;h4 id=&#34;概述&#34;&gt;概述&lt;/h4&gt;
+&lt;p&gt;内容是在平时遇到的一些常用的技巧或者不常用但是很有用的一些语句等，给自己留作备份记录，以便后期使用的方便。&lt;br&gt;
+主要是自己的记性并不怎么好，所以好记性不如烂笔头。&lt;/p&gt;
+&lt;h4 id=&#34;常用语句&#34;&gt;常用语句&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;update join&lt;br&gt;
+语句是用来联表执行update语句的使用，常用来将A表的字段，更新为B表的某一个字段等，前提是A表与B表必须要有关联的字段（条件）。&lt;br&gt;
+示例：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;update table_1 tb1 
+left join table_2 tb2 on tb1.field1 = tb2.field1 
+set tb1.field2 = tb2.field2;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;常见问题技巧&#34;&gt;常见问题&amp;amp;技巧&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;my.cnf -&amp;gt; sql_mode&lt;br&gt;
+该参数，定义了Mysql应该支持的SQL语法、数据校验等。曾经遇到两个问题，需要修改sql_mode的配置：
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;NO_ZERO_IN_DATE：数据导入的数据库，日期类型的默认值：&lt;code&gt;0000-00-00 00:00:00&lt;/code&gt;的时候，遇到了问题，提示说一个不能被支持的日期的默认格式，这种情况，就是在sql_mode中定义了：&lt;code&gt;NO_ZERO_IN_DATE&lt;/code&gt;,需要将该配置关闭，才能将日期默认值设置为0。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ANSI_QUOTES：导出的数据表结构的字段，是被双引号(&amp;quot;&amp;quot;)引用的，而不是被Mysql的识别符(``)引用的，导致运行导出的SQL无法运行。该问题是因为在sql_mode中，开启了：&lt;code&gt;ANSI_QUOTES&lt;/code&gt;配置，该配置是控制能否用双引号(&amp;quot;&amp;quot;)引用字符的。关闭该配置，既可以支持正常的SQL语法了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+">Mysql 常用语句技巧汇总</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/WaT4ojcly/"" data-c="
+          &lt;h4 id=&#34;问题描述&#34;&gt;问题描述&lt;/h4&gt;
+&lt;p&gt;服务器的磁盘空间比较小，大概20G左右，突然有一天发现&lt;code&gt;mysql&lt;/code&gt;查询无法执行了。&lt;/p&gt;
+&lt;p&gt;在&lt;code&gt;navicat&lt;/code&gt;中，刷新数据表的时候，&lt;br&gt;
+提醒错误：&lt;code&gt;Got error 28 from storage engine&lt;/code&gt;。&lt;br&gt;
+&lt;code&gt;SQL&lt;/code&gt;语句也无法执行。&lt;/p&gt;
+&lt;p&gt;然后我就很悲催的重启了&lt;code&gt;mysql&lt;/code&gt;服务。&lt;br&gt;
+这下完了，再也启动不了&lt;code&gt;mysql&lt;/code&gt;服务了。&lt;br&gt;
+因为最终排查到错误信息说是磁盘空间占用满了，&lt;br&gt;
+通过&lt;code&gt;df -h&lt;/code&gt;命令，查看，发现磁盘空间确实占用了100%，&lt;br&gt;
+所以&lt;code&gt;mysql&lt;/code&gt;不可能起的的起来的。&lt;/p&gt;
+&lt;p&gt;现在只能通过腾出一些服务器的磁盘空间，才能将&lt;code&gt;mysql&lt;/code&gt;启动的。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h4 id=&#34;思路&#34;&gt;思路&lt;/h4&gt;
+&lt;p&gt;服务器的空间本来就不大的，只能清除一些不常用的文件，才可以&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;程序运行过程中，产生的一些日志文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mysql&lt;/code&gt;产生的&lt;code&gt;mysql-bin.xxxxxx&lt;/code&gt;文件（因为发现这个文件比较大，他自己一个文件都有2~3个G的，因此考虑将该文件删除）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;分析&#34;&gt;分析&lt;/h4&gt;
+&lt;p&gt;先对&lt;code&gt;mysql-bin.xxxxxx&lt;/code&gt;文件进行分析，该文件是&lt;code&gt;mysql&lt;/code&gt;的操作日志文件。&lt;br&gt;
+例如UPDATE一个表，或者DELETE一些数据，即使该语句没有匹配的数据，这个命令也会存储到日志文件中，还包括每个语句执行的时间，也会记录进去的。&lt;br&gt;
+该文件的主要作用，是数据恢复、主从同步数据等。&lt;br&gt;
+&lt;strong&gt;&lt;strong&gt;如果&lt;code&gt;msyql&lt;/code&gt;服务器在正常运行，能进入的话，直接进入&lt;code&gt;mysql&lt;/code&gt;的控制台，执行命令：&lt;code&gt;reset master;&lt;/code&gt;，就会将&lt;code&gt;mysql-bin.xxxxxx&lt;/code&gt;文件清除了&lt;/strong&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;但是&lt;code&gt;msyql&lt;/code&gt;服务已经无法启动了，因此只能考虑第1条，考虑定时清空删除一些手动记录的日志文件了。但是手动删除不是长久之计，因此要定时删除这些文件。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;查找日志目录下，超过7天未有修改记录的日志文件，执行&lt;code&gt;rm&lt;/code&gt;删除。&lt;/li&gt;
+&lt;li&gt;每天定时&lt;code&gt;crontab&lt;/code&gt;执行该命令。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;查找目录下，超过7天的文件，并且执行删除操作命令：&lt;br&gt;
+删除文件：&lt;code&gt;find /path -mtime +7 -type f -name &#39;*.log&#39; | xargs rm -f&lt;/code&gt;&lt;br&gt;
+删除目录：&lt;code&gt;find /path -mtime +7 -type d | xargs rm -rf&lt;/code&gt;（删除path目录下，创建时间超过7天的文件夹）&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;path&lt;/code&gt;是需要查找日志文件的目录。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-mtime +7&lt;/code&gt;是指修改时间距离当前时间超过7天的文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-type&lt;/code&gt;指类型是文件&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-name&lt;/code&gt;文件名字，参数可省略&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;xargs&lt;/code&gt;是同步执行命令&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;最终，可配置定时任务：&lt;br&gt;
+&lt;code&gt;0 2 * * * find path -mtime +7 -type f -name &#39;*.log&#39; |xargs rm -f &amp;gt;&amp;gt; /dev/null&lt;/code&gt;&lt;/p&gt;
+">Linux 定时清理日志文件，磁盘占满，MYSQL无法启动</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/yk9hFpPKY/"" data-c="
+          &lt;h4 id=&#34;概述&#34;&gt;概述&lt;/h4&gt;
+&lt;p&gt;环境：Linux&lt;br&gt;
+用&lt;code&gt;SVN&lt;/code&gt;版本库协作开发，每次本地开发之后，如果不想手动在服务器执行更新命令的话，可以设置服务器的自动更新。&lt;br&gt;
+自动更新的话，个人理解为分服务器主动更新（&lt;code&gt;svn up&lt;/code&gt;），和服务器被动更新。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h4 id=&#34;分析&#34;&gt;分析&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;主动更新&lt;br&gt;
+这种方式，服务器，自主执行&lt;code&gt;svn update&lt;/code&gt;操作更新。&lt;br&gt;
+手动执行该操作，或者通过定时任务&lt;code&gt;crontab&lt;/code&gt;定时执行&lt;code&gt;svn up&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;被动更新&lt;br&gt;
+这种方式，是通过&lt;code&gt;SVN&lt;/code&gt;版本库所在的服务器，通过钩子(&lt;code&gt;hooks&lt;/code&gt;)，在版本库触发某个事件的时候，自动更新的&lt;code&gt;WEB&lt;/code&gt;服务器。不需要执行定时任务触发。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;实现&#34;&gt;实现&lt;/h4&gt;
+&lt;h6 id=&#34;钩子自动更新&#34;&gt;钩子自动更新&lt;/h6&gt;
+&lt;p&gt;首先声明，该种方式，我没有手动执行实现过，只是知道大致的实现原理。&lt;/p&gt;
+&lt;p&gt;在&lt;code&gt;SVN&lt;/code&gt;的版本库里面，有个&lt;code&gt;hooks&lt;/code&gt;，在里面，有好几个&lt;code&gt;*.tmpl&lt;/code&gt;文件，找到其中&lt;code&gt;post-commit.tmpl&lt;/code&gt;这个文件，这个钩子。大概的意思是在&lt;code&gt;svn&lt;/code&gt;提交的时候，会触发该脚本。&lt;/p&gt;
+&lt;p&gt;在触发改脚本的时候，我们就可以在其中处理一下我们需要的时间，比如：将代码推送发布到&lt;code&gt;WEB&lt;/code&gt;服务器等。&lt;/p&gt;
+&lt;p&gt;当时配置过&lt;code&gt;windows&lt;/code&gt;上面的钩子，同步的&lt;code&gt;WEB&lt;/code&gt;服务器，在&lt;code&gt;linux&lt;/code&gt;上，由于各种账号权限的问题，配置起来非常麻烦，因此没有成功。&lt;/p&gt;
+&lt;h6 id=&#34;主动更新&#34;&gt;主动更新&lt;/h6&gt;
+&lt;p&gt;主动更新的原理，就是执行&lt;code&gt;svn up&lt;/code&gt;，目的是要实现自动更新。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;crontab 定时任务&lt;br&gt;
+这种新式比较简单，只需要在&lt;code&gt;crontab&lt;/code&gt;中，配置定时执行&lt;code&gt;svn update&lt;/code&gt;命令即可：&lt;br&gt;
+&lt;code&gt;*/5 * * * * svn up /project/path&lt;/code&gt;&lt;br&gt;
+就是每5分钟，执行指定目录更新一次。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;web页面，手动执行更新&lt;br&gt;
+通过&lt;code&gt;crontab&lt;/code&gt;自动更新，总会有延迟的存在，如果想在&lt;code&gt;svn&lt;/code&gt;提交之后，就能立即看到效果，而又没有通过钩子配置自动更新，而且也不能开放服务器的登录权限的话，只能通过&lt;code&gt;web&lt;/code&gt;编写页面操作&lt;code&gt;svn up&lt;/code&gt;,通过&lt;code&gt;PHP&lt;/code&gt;执行&lt;code&gt;Linux&lt;/code&gt;命令，主要的函数：&lt;code&gt;shell_exec()&lt;/code&gt;。可以写个&lt;code&gt;WEB&lt;/code&gt;应用，通过PHP执行&lt;code&gt;shell_exec()&lt;/code&gt;，来执行&lt;code&gt;SVN&lt;/code&gt;的更新，并可以将结果动态的展示给用户。该形式在我的&lt;code&gt;git&lt;/code&gt;项目里，有个表哥（BigPao）提供的应用。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;遇到问题&#34;&gt;遇到问题&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;在通过&lt;code&gt;shell_exec()&lt;/code&gt;执行更新的时候，总是不成功，返回结果：&lt;br&gt;
+&lt;code&gt;Updating &#39;/project/paty&#39;：&lt;/code&gt;，但是实际并没有执行成功，查看错误日志，&lt;br&gt;
+提示：&lt;code&gt;/root/.subversion&lt;/code&gt;没有权限&lt;br&gt;
+该问题的原因是因为一般的&lt;code&gt;WEB&lt;/code&gt;应用，都是通过&lt;code&gt;www&lt;/code&gt;用户组运行的，该用户，是没有权限操作&lt;code&gt;/root/&lt;/code&gt;用户的文件的，因此在执行&lt;code&gt;svn up&lt;/code&gt;等操作的时候，需要制定&lt;code&gt;config-dir&lt;/code&gt;参数：&lt;br&gt;
+&lt;code&gt;svn update --config-dir /project3/.subversion /project3/&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;shell_exec()&lt;/code&gt;执行更新，报错：svn: E155037: 以前的操作没有完成；如果它被中断，请执行“svn cleanup”&lt;br&gt;
+该问题，是由于&lt;code&gt;svn&lt;/code&gt;本地库遇到了一点问题，需要手动执行&lt;code&gt;svn cleanup&lt;/code&gt;，但是如果通过在服务器执行&lt;code&gt;svn cleanup&lt;/code&gt;的话，会将项目目录下的：&lt;code&gt;/project/.svn/tmp&lt;/code&gt;文件的用户组改为：&lt;code&gt;root&lt;/code&gt;。这样，在通过&lt;code&gt;shell_exec()&lt;/code&gt;执行更新的时候，就会提醒：&lt;br&gt;
+&lt;code&gt;svn: E000013: 无法从模版“/project/.svn/tmp/svn-XXXXXX”创建临时文件: 权限不够&lt;/code&gt;。&lt;br&gt;
+因此需要通过PHP来执行&lt;code&gt;svn cleanup&lt;/code&gt;：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;svn cleanup --config-dir /project3/.subversion /project3/;
+svn update --config-dir /project3/.subversion /project3/;
+sleep 1;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;在实际的项目开发过程中，有可能会用&lt;code&gt;FTP&lt;/code&gt;上传了某个文件，如果该文件，不是&lt;code&gt;www&lt;/code&gt;用户组的文件的话，再&lt;code&gt;shell_exec()&lt;/code&gt;执行更新的时候，也会同样报无权限的错误，因此需要将上面的语句，再次优化：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;chown -hR www:www /project3/;
+svn cleanup --config-dir /project3/.subversion /project3/;
+svn update --config-dir /project3/.subversion /project3/;
+sleep 1;
+&lt;/code&gt;&lt;/pre&gt;
+">SVN自动更新 Linux</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/ruVdRms-r/"" data-c="
+          &lt;h4 id=&#34;概述&#34;&gt;概述&lt;/h4&gt;
+&lt;p&gt;环境：&lt;br&gt;
+Centos-6.8&lt;br&gt;
+SVN-1.9.5&lt;br&gt;
+&lt;code&gt;Centos&lt;/code&gt;默认的&lt;code&gt;SVN&lt;/code&gt;版本是1.7，虽然现在&lt;code&gt;Centos&lt;/code&gt;版本升级到7了，但是&lt;code&gt;yum&lt;/code&gt;库中的&lt;code&gt;SVN&lt;/code&gt;版本依然没有更新，这样对使用新版的&lt;code&gt;SVN&lt;/code&gt;版本的代码就造成了困扰。&lt;br&gt;
+比如：我们在&lt;code&gt;windows&lt;/code&gt;上，试用的SVN版本是1.9版本的，在其他linux服务器上使用的&lt;code&gt;SVN&lt;/code&gt;版本如果低于1.9的话，&lt;code&gt;SVN UP&lt;/code&gt;时候，会提示需要升级&lt;code&gt;SVN&lt;/code&gt;版本。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h4 id=&#34;安装or升级过程&#34;&gt;安装OR升级过程&lt;/h4&gt;
+&lt;p&gt;将默认的&lt;code&gt;YUM&lt;/code&gt;库中的&lt;code&gt;SVN&lt;/code&gt;源替换掉，然后执行&lt;code&gt;yum install subversion&lt;/code&gt;即可安装成功&lt;code&gt;SVN&lt;/code&gt;的最新版本&lt;/p&gt;
+&lt;h5 id=&#34;第1步&#34;&gt;第1步&lt;/h5&gt;
+&lt;p&gt;在&lt;code&gt;yum&lt;/code&gt;库中创建&lt;code&gt;svn&lt;/code&gt;的远程源文件:&lt;code&gt;vim /etc/yum.repos.d/wandisco-svn.repo&lt;/code&gt;。&lt;br&gt;
+在文件中填充内容&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[WandiscoSVN]
+name=Wandisco SVN Repo
+baseurl=http://opensource.wandisco.com/centos/$releasever/svn-1.9/RPMS/$basearch/
+enabled=1
+gpgcheck=0
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;目前最新的&lt;code&gt;svn&lt;/code&gt;版本是1.9版本，如果需要指定&lt;code&gt;svn&lt;/code&gt;的版本号，只需要到&lt;a href=&#34;http://opensource.wandisco.com/centos/&#34;&gt;http://opensource.wandisco.com/centos/&lt;/a&gt;中，寻找自己系统对应的版本，对应的&lt;code&gt;svn&lt;/code&gt;版本即可。&lt;/p&gt;
+&lt;h5 id=&#34;第2步&#34;&gt;第2步&lt;/h5&gt;
+&lt;p&gt;清除目前自己服务器上的&lt;code&gt;svn&lt;/code&gt;：&lt;code&gt;yum remove subversion*&lt;/code&gt;&lt;br&gt;
+更新&lt;code&gt;yum&lt;/code&gt;库：&lt;code&gt;yum clean all&lt;/code&gt;&lt;br&gt;
+安装&lt;code&gt;svn&lt;/code&gt;：&lt;code&gt;yum install subversion&lt;/code&gt;&lt;/p&gt;
+&lt;h5 id=&#34;第3步&#34;&gt;第3步&lt;/h5&gt;
+&lt;p&gt;确定&lt;code&gt;svn&lt;/code&gt;版本是最新版，并且安装成功：&lt;code&gt;svn --versioni&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[root@localhost /]# svn --version
+svn，版本 1.9.5 (r1770682)
+   编译于 Dec  1 2016，13:25:01 在 x86_64-redhat-linux-gnu
+
+Copyright (C) 2016 The Apache Software Foundation.
+This software consists of contributions made by many people;
+see the NOTICE file for more information.
+Subversion is open source software, see http://subversion.apache.org/
+
+可使用以下的版本库访问模块: 
+
+* ra_svn : 使用 svn 网络协议访问版本库的模块。  - 使用 Cyrus SASL 认证
+  - 处理“svn”方案
+* ra_local : 访问本地磁盘的版本库模块。
+  - 处理“file”方案
+* ra_serf : Module for accessing a repository via WebDAV protocol using serf.
+  - using serf 1.3.7 (compiled with 1.3.7)
+  - 处理“http”方案
+  - 处理“https”方案
+
+The following authentication credential caches are available:
+
+* Plaintext cache in /root/.subversion
+* Gnome Keyring
+* GPG-Agent
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;到此步骤，说明&lt;code&gt;svn-1.9.5&lt;/code&gt;版本已经安装成功&lt;/p&gt;
+&lt;h4 id=&#34;其他命令&#34;&gt;其他命令&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;查看某个用户的&lt;code&gt;svn&lt;/code&gt;提交记录：&lt;code&gt;svn log path -l 10 |sed -n &#39;/user/,/-----$/ p&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在&lt;code&gt;path&lt;/code&gt;目录中，查看最近的10条提交记录中，&lt;code&gt;user&lt;/code&gt;的提交操作。返回的数据可能小于10，因为10条提交，不一定全部都是&lt;code&gt;user&lt;/code&gt;提交的。&lt;/p&gt;
+&lt;/blockquote&gt;
+">Centos安装最新版SVN</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/-cQZfNoiG/"" data-c="
+          &lt;h4 id=&#34;概述&#34;&gt;概述&lt;/h4&gt;
+&lt;p&gt;环境：&lt;br&gt;
+centos-6.8&lt;br&gt;
+git-2.9.3&lt;/p&gt;
+&lt;p&gt;说明：像&lt;code&gt;SVN&lt;/code&gt;一样，&lt;code&gt;Centos&lt;/code&gt;自带的&lt;code&gt;git&lt;/code&gt;的版本，也不高，貌似是1.7版本的，如果需要安装新版本的&lt;code&gt;git&lt;/code&gt;，就需要手动编译安装。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h4 id=&#34;安装过程&#34;&gt;安装过程&lt;/h4&gt;
+&lt;p&gt;手动编译安装，需要下载&lt;code&gt;git&lt;/code&gt;的源码包。手动编译，不像&lt;code&gt;yum&lt;/code&gt;安装一样，在安装的过程中会自动安装第三方依赖的库或者扩展等。所有的依赖、扩展都需要自己手动编译安装。&lt;/p&gt;
+&lt;h5 id=&#34;第1步&#34;&gt;第1步&lt;/h5&gt;
+&lt;p&gt;安装&lt;code&gt;git&lt;/code&gt;编译安装过程中，需要的依赖扩展&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel
+# yum install gcc perl-ExtUtils-MakeMaker
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;第2步&#34;&gt;第2步&lt;/h5&gt;
+&lt;p&gt;下载&lt;code&gt;git&lt;/code&gt;最新版本的源码包，截至到目前，最新的&lt;code&gt;git&lt;/code&gt;版本是&lt;code&gt;2.9.3&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# wget https://www.kernel.org/pub/software/scm/git/git-2.9.3.tar.gz
+# tar xzf git-2.9.3.tar.gz
+# cd git-2.9.3
+# make prefix=/usr/local/git all
+# make prefix=/usr/local/git install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;如果需要指定&lt;code&gt;git&lt;/code&gt;的版本号，只需要到&lt;a href=&#34;https://www.kernel.org/pub/software/scm/git/&#34;&gt;https://www.kernel.org/pub/software/scm/git/&lt;/a&gt;中，寻找自己系统对应的版本，对应的&lt;code&gt;git&lt;/code&gt;版本即可。&lt;/p&gt;
+&lt;h5 id=&#34;第3步&#34;&gt;第3步&lt;/h5&gt;
+&lt;p&gt;安装成功之后，需要将&lt;code&gt;git&lt;/code&gt;写入到系统的环境变量，以便执行&lt;code&gt;git&lt;/code&gt;相关的命令&lt;br&gt;
+&lt;code&gt;vim /etc/bashrc&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;打开编辑&lt;code&gt;bashrc&lt;/code&gt;文件之后，在结尾追加：&lt;code&gt;export PATH=$PATH:/usr/local/git/bin&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;重新加载&lt;code&gt;bashrc&lt;/code&gt;：&lt;code&gt;source /etc/bashrc&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;确定&lt;code&gt;git&lt;/code&gt;版本是最新版，并且安装成功：&lt;code&gt;git --version&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;问题&#34;&gt;问题&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;在&lt;code&gt;git&lt;/code&gt;安装，&lt;code&gt;make prefix=/usr/local all&lt;/code&gt;报出下面的错误信息：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;libgit.a(utf8.o): In function `reencode_string_iconv&#39;:
+/usr/local/git/utf8.c:463: undefined reference to `libiconv&#39;
+libgit.a(utf8.o): In function `reencode_string_len&#39;:
+/usr/local/git/utf8.c:502: undefined reference to `libiconv_open&#39;
+/usr/local/git/utf8.c:521: undefined reference to `libiconv_close&#39;
+/usr/local/git/utf8.c:515: undefined reference to `libiconv_open&#39;
+collect2: ld returned 1 exit status
+make: *** [git-credential-store] Error 1
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;需要安装&lt;code&gt;libiconv&lt;/code&gt;扩展，安装步骤：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# wget http://ftp.gnu.org/pub/gnu/libiconv/libiconv-1.14.tar.gz
+# tar -zxvf libiconv-1.14.tar.gz
+# cd libiconv-1.14
+# ./configure --prefix=/usr/local/libiconv &amp;amp;&amp;amp; make &amp;amp;&amp;amp; make install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;创建一个软链接到&lt;code&gt;/usr/lib&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;ln -s /usr/local/lib/libiconv.so /usr/lib
+ln -s /usr/local/lib/libiconv.so.2 /usr/lib
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后，继续回到&lt;code&gt;git&lt;/code&gt;安装过程的&lt;code&gt;make&lt;/code&gt;步骤，添加&lt;code&gt;--with-iconv&lt;/code&gt;参数&lt;br&gt;
+最终的运行安装模式：&lt;br&gt;
+&lt;code&gt;./configure --prefix=/usr/local --with-iconv=/usr/local/libiconv&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;执行&lt;code&gt;source /etc/bashrc&lt;/code&gt;后，&lt;code&gt;git --version&lt;/code&gt;没有生效&lt;br&gt;
+可以&lt;code&gt;find / -name &#39;git&#39;&lt;/code&gt;找到&lt;code&gt;git&lt;/code&gt;命令文件在&lt;code&gt;/usr/bin&lt;/code&gt;下，将该文件备份，然后拷贝新安装的&lt;code&gt;git&lt;/code&gt;到该目录&lt;br&gt;
+&lt;code&gt;cp /usr/local/git/bin/git /usr/bin&lt;/code&gt;即可&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;附录&#34;&gt;附录&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;libiconv&lt;/code&gt;下载地址[链接：http://pan.baidu.com/s/1ccTaaU 密码：5pfr]&lt;/p&gt;
+">Centos 安装最新版GIT</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/MrbMc5DCR/"" data-c="
+          &lt;h3 id=&#34;问题列表&#34;&gt;问题列表&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;不同系统（&lt;code&gt;windows|linux|macos&lt;/code&gt;）之间协作&lt;code&gt;git&lt;/code&gt;遇到问题：&lt;br&gt;
+[git] warning: LF will be replaced by CRLF | fatal: CRLF would be replaced by LF&lt;/li&gt;
+&lt;li&gt;git撤销未提交的修改&lt;/li&gt;
+&lt;li&gt;git提交目录，但是忽略目录中的文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- more --&gt;
+&lt;h3 id=&#34;问题说明&#34;&gt;问题说明&lt;/h3&gt;
+&lt;h4 id=&#34;git-warning-lf-will-be-replaced-by-crlf-fatal-crlf-would-be-replaced-by-lf&#34;&gt;[git] warning: LF will be replaced by CRLF | fatal: CRLF would be replaced by LF&lt;/h4&gt;
+&lt;p&gt;遇到该错误，是由于&lt;code&gt;GIT&lt;/code&gt;的换行符检查功能造成的。主要原因是不同的系统，使用的换行符不同。&lt;br&gt;
+&lt;code&gt;windows&lt;/code&gt;使用&lt;strong&gt;回撤+换行&lt;/strong&gt;两个字符来表示一行的结束。&lt;br&gt;
+&lt;code&gt;Macos or Linux&lt;/code&gt;使用&lt;strong&gt;换行&lt;/strong&gt;一个字符，来表示结束一行。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;core.safecrlf&lt;/code&gt;配置项，是换行符检查功能，可以在提交是检查文件是否混用了不同的换行风格的换行符，功能选项：&lt;br&gt;
+false：不做任何检查&lt;br&gt;
+warn：在提交时检查并警告&lt;br&gt;
+true：在提交时检查，如果发现混用则拒绝提交&lt;br&gt;
+配置形式：&lt;code&gt;# git config --global core.safecrlf false&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;core.autocrlf&lt;/code&gt; 自动将&lt;code&gt;CRLF&lt;/code&gt;转换成&lt;code&gt;LF&lt;/code&gt;选项配置。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Git可以在你提交时自动地把行结束符CRLF转换成LF，而在签出代码时把LF转换成CRLF。用core.autocrlf来打开此项功能，如果是在Windows系统上，把它设置成true，这样当签出代码时，LF会被转换成CRLF：&lt;br&gt;
+&lt;code&gt;# git config --global core.autocrlf true&lt;/code&gt;&lt;br&gt;
+&lt;br /&gt;&lt;br&gt;
+Linux或Mac系统使用LF作为行结束符，因此你不想 Git 在签出文件时进行自动的转换；当一个以CRLF为行结束符的文件不小心被引入时你肯定想进行修正，把core.autocrlf设置成input来告诉 Git 在提交时把CRLF转换成LF，签出时不转换：&lt;br&gt;
+&lt;code&gt;# git config --global core.autocrlf input&lt;/code&gt;&lt;br&gt;
+&lt;br /&gt;&lt;br&gt;
+如果你是Windows程序员，且正在开发仅运行在Windows上的项目，可以设置false取消此功能，把回车符记录在库中：&lt;br&gt;
+&lt;code&gt;# git config --global core.autocrlf false&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;git撤销未提交的修改&#34;&gt;GIT撤销未提交的修改&lt;/h4&gt;
+&lt;p&gt;恢复某个已修改的文件（撤销未提交的修改）：&lt;code&gt;git checkout file-name&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;git提交目录但是忽略目录中的文件&#34;&gt;git提交目录，但是忽略目录中的文件&lt;/h4&gt;
+&lt;p&gt;前提是目录中的文件未提交&lt;br&gt;
+空目录，&lt;code&gt;git&lt;/code&gt;会自动排除提交的，因此，我们要将该目录变为不空的，但是又要忽略目录中的其他文件提交，所以就要用到&lt;code&gt;git&lt;/code&gt;的忽略提交：&lt;code&gt;.gitkeep&lt;/code&gt;。&lt;br&gt;
+比如，有目录：&lt;code&gt;runtime&lt;/code&gt;，目录下有文件&lt;code&gt;1.log、2.log、3.log&lt;/code&gt;。&lt;br&gt;
+需要提交&lt;code&gt;runtime&lt;/code&gt;目录，但是不提交&lt;code&gt;1.log、2.log、3.log&lt;/code&gt;。&lt;br&gt;
+&lt;code&gt;mkdir runtime &amp;amp;&amp;amp; touch log/.gitkeep &amp;amp;&amp;amp; git add log/.gitkeep&lt;/code&gt;即可。&lt;/p&gt;
+">GIT使用常见问题汇总</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/JVL2Ba5H-/"" data-c="
+          &lt;h2 id=&#34;序&#34;&gt;序&lt;/h2&gt;
+&lt;h4 id=&#34;思路决定出路结果改变人生&#34;&gt;思路决定出路，结果改变人生&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;1. 做大做强是一个结果，而这个结果只能从员工获得。
+2. 企业靠员工提供的结果生存，所以如果你要早就一个强大的公司，那么请你先学会打造强大的员工。
+3. 什么是国际化？少一点狭隘的民族自尊心，就叫国际化；
+   什么叫职业化，少一点狭隘的主人翁意识，多一点雇佣感，就是职业化！
+4. 做一个商人（任何企业员工都是商人）最基本的天职就是创造价值，提供结果。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- more --&gt;
+&lt;h2 id=&#34;目录&#34;&gt;目录&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;h2 id=&#34;不要任务要结果&#34;&gt;不要任务，要结果&lt;/h2&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;完成任务结果&#34;&gt;完成任务≠结果&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;	  任务是一个执行的假象，因为我们绝大多数的人在实际工作中， 
+	当你以为你在执行的时候，其实是在完成任务，因为你没有结果！
+	  我们要懂得一个基本道理：对结果负责，是对我们工作的价值负责；
+	而对任务负责，是对工作的程序负责，完成任务≠结果！(p2)
+1. 为什么是结果而不是任务？—— 员工与企业之间本质上是商业交换关系。(p8)
+2. 请记住，企业购买的是结果，也就是劳动的结果，而不是劳动。劳动是不值钱的，只有劳动的结果才值钱。(p9)
+3. 执行是要做结果，而不是完成任务！
+   我们永远都要锁定“结果”这个目标，而不是完成任务这个“程序”，因为“完成任务≠结果”。（p11）
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;结果-做一个员工的底线&#34;&gt;结果 —— 做一个员工的底线&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;	做商人的底线是，你必须懂得客户之所以给你钱，是因为你做事的结果，而不是因为你付出了什么。
+	你如何辛苦并不重要，但你提供了什么价值却很重要！
+1. 员工的底线：做一个合格的员工有很多要求，但最基本的就是提供结果。（p15）
+2. 职业化一时的起点，就要从为公司提供底线 —— 结果开始。(p15)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;做结果做一个负责人的人&#34;&gt;做结果，做一个负责人的人&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;	对结果负责的人，就是对自己负责的人。所有执行型人才，他们只有一个共同的特点，那就是对自己负责！(p17)
+1. 成功的人，是那些对自己负责的人（p17）
+2. 执行三要素：**信守承诺，结果导向，永不言败**！(p18)
+3. 对结果的负责：使我们痛苦的，必使我们强大(p20)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;结果完全整我在自己的守中&#34;&gt;结果：完全整我在自己的守中&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;	  进入公司，就意味着在你的人生中，你每天都要用结果来交换自己的工资，
+	也要用结果来证明自己的价值。结果怎样，与他人无关。
+	  只在于你是不是一名合格的员工或合格的管理者，在于你是不是真正地对企业、对自己有价值！
+	  你每天结果的累加，也就是你的人生价值，这完全掌握在你的守中！(p22)
+1. 自度、自助、自救：上帝只帮助那些自救的人。（p24）
+2. 人们只愿意帮助自救的奋斗者，鄙视卖弄伤口的乞丐。上帝只帮助那些不愿意放弃自己的人！这就是我们这个社会的帮助逻辑！（p25）
+3. 什么使你痛苦，什么使你强大？结果使你痛苦，结果使你强大！（p26）
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;
+&lt;h2 id=&#34;心态决定行动&#34;&gt;心态决定行动&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt; 行动，来自“结果心态”
+ 结果心态：不是“想要”，而是“一定要”
+ 结果心态三要素：心态如何决定行动(p27)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;行动来自结果心态&#34;&gt;行动，来自“结果心态”&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;	心态创造行动，行动创造结果，这就是商业心态。
+	我们的所有努力，目的在于“给客户提供一个实实在在的产品，并且使客户觉得物有所值”。
+	如果我们想要一个满意的“商业结果”，那么我们首先要树立一种能够激发行动的“商业心态”。(p28)
+1. 只有依靠结果，公司才能生存(p28)
+2. 结果心态是一种价值心态（p29）
+3. 获得回报是一种结果，提供价值才是创造结果的原因（p31）
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;结果心态不知想要而是一定要&#34;&gt;结果心态：不知“想要”，而是“一定要”&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;	当有一天你的上司问你要某个结果时，你在执行前，不是考虑能不能成功
+	而是下决心即使失败也要执行，关键是建立必胜的新年和决心，
+	坚决贯彻执行决策，尽最大力量获得决策时所要的结果。（p35）
+1. 尊严首先是对自己的承诺负责（p40）
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;结果心态三要素心态如何决定行动&#34;&gt;结果心态三要素：心态如何决定行动&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;	面对你想要的结果付出行动，在这条路上，也许你会面临阻险，你会遭遇磕磕碰碰，
+	你会等待若干次失败的考验，但这都算什么呢？只要你坚守信念，勇敢面对，
+	永不放弃，那么你就会看见风雨过后的彩虹。（p42）
+1. 吃了才知道梨子的滋味：结果心态的第一要素是行动思维(p42)
+2. 用80美元周游世界：结果心态的第二要素是合作（p43）
+3. 成功需要百折不挠的心：结果心态的第三要素是永不放弃（p45）
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;
+&lt;h2 id=&#34;行动决定结果&#34;&gt;行动决定结果&lt;/h2&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;行动才能出结果&#34;&gt;行动才能出结果&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;	商业底线告诉我们一个重要的“结果原理”：我们靠结果生存！
+	没有结果的努力是无用功。没有结果，意味着我们将重新回到起点，一切从零开始！
+	只有抓住结果，才能实现我们的预期。
+	但结果从哪里来？行动不一定有结果，但不行动就一定不会有结果。（p48）
+1. 结果来自行动（p48）
+2. 坐着不动，永远也赚不到钱。（p49）
+3. 有时，成功就是如此简单，大胆行动，付出行动，过多地犹豫反而会成为你的阻碍，只有行动了，你才能看到事情的结果。（p52）
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;01-0-立即行动速度第一&#34;&gt;0.1 &amp;gt; 0 —— 立即行动，速度第一&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;	执行就是要结果，一个差的结果也比没有结果强！有了0.1，就有0.2，0.1永远大于0.
+	而完美的结果，永远是长期努力的结果。不要犹豫，立即行动，速度制胜！(p53)
+1. **为了100而放弃0.1，结果得到0，追求完美，那是执行的敌人**。（p53）
+2. 一个查的结果也比没有结果强（p54）
+3. 不要盲目追求完美。如果你总是追求完美的结果，多半你得到的是一个完美的接口或理由。（p55）
+4. 完美的结果，永远是长期努力的结果。如果要追求快速而有力地执行，我们就要习惯接受不完美的结果。完美，是一个执行的陷阱。(p56)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;行动时请注意重点只有一个&#34;&gt;行动时请注意：重点只有一个&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;	在解决问题的程序上，先从解决紧迫、最重要的事情开始，把这个事情解决了以后，再来一个一个地解决其他事情。
+	如果你一开始就全抓的话，反而解决不好。记住，重点只有一个！（p57）
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;行动时不要给自己太多借口&#34;&gt;行动时，不要给自己太多借口&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;	当事情都做完了，无论你有一千个理由，一万个理由都不重要，重要的是这个事情的结果时什么！
+	因为我们要牢记一个“结果原理” —— 我们是靠结果生存的，我们不可能靠理由生存。
+	没有结果，我们就不能生存。（p61）
+1. 当你在为自己的努力、辛劳辩解的同事，问题的关键并没有消失：结果怎么样了？（p63）
+2. 结果就是结果，它不会因为你给出理由的多少、好坏而改变。在残酷的事实面前，任何理由都是借口。借口，会使你迈向死亡！
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;
+&lt;h2 id=&#34;如何建立一个强大的中层&#34;&gt;如何建立一个强大的中层&lt;/h2&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;决胜于中层找准位置-从乘客到司机&#34;&gt;决胜于中层：找准位置 —— 从乘客到司机&lt;/h4&gt;
+&lt;h4 id=&#34;归零心态行动才能改变命运&#34;&gt;归零心态：行动才能改变命运&lt;/h4&gt;
+&lt;h4 id=&#34;没有最好只有更好&#34;&gt;没有最好，只有更好&lt;/h4&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;
+&lt;h2 id=&#34;锁定责任才能锁定结果&#34;&gt;锁定责任，才能锁定结果&lt;/h2&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;锁定责任&#34;&gt;锁定责任&lt;/h4&gt;
+&lt;h4 id=&#34;让你的时间守恒不要把力气花在说教上&#34;&gt;让你的时间守恒：不要把力气花在说教上&lt;/h4&gt;
+&lt;h4 id=&#34;永远做重要而不紧急的事&#34;&gt;永远做重要而不紧急的事&lt;/h4&gt;
+&lt;h4 id=&#34;如何授权与受权&#34;&gt;如何授权与受权&lt;/h4&gt;
+&lt;h4 id=&#34;学会监督和检查&#34;&gt;学会监督和检查&lt;/h4&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;
+&lt;h2 id=&#34;失败执行力如何从失败中获得成功&#34;&gt;失败执行力：如何从失败中获得成功&lt;/h2&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;要成功就要先拥抱失败&#34;&gt;要成功，就要先拥抱失败&lt;/h4&gt;
+&lt;h4 id=&#34;左眼是失败右眼是成功&#34;&gt;左眼是失败，右眼是成功&lt;/h4&gt;
+&lt;h4 id=&#34;防止失败要学会善待失败&#34;&gt;防止失败，要学会善待失败&lt;/h4&gt;
+&lt;h4 id=&#34;没有失败只有暂时停止成功&#34;&gt;没有失败，只有暂时停止成功&lt;/h4&gt;
+&lt;h4 id=&#34;绝不放弃&#34;&gt;绝不放弃&lt;/h4&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;
+&lt;h2 id=&#34;真正的执行48字执行真经&#34;&gt;真正的执行：48字执行真经&lt;/h2&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;认证第一聪明第二&#34;&gt;认证第一，聪明第二&lt;/h4&gt;
+&lt;h4 id=&#34;结果提前自我退后&#34;&gt;结果提前，自我退后&lt;/h4&gt;
+&lt;h4 id=&#34;锁定目标专注重复&#34;&gt;锁定目标，专注重复&lt;/h4&gt;
+&lt;h4 id=&#34;决心第一成败第二&#34;&gt;决心第一，成败第二&lt;/h4&gt;
+&lt;h4 id=&#34;速度第一完美第二&#34;&gt;速度第一，完美第二&lt;/h4&gt;
+&lt;h4 id=&#34;结果第一理由第二&#34;&gt;结果第一，理由第二&lt;/h4&gt;
+&lt;h4 id=&#34;48字真经一箭洞穿执行力&#34;&gt;48字真经：一箭洞穿执行力&lt;/h4&gt;
+">请给我结果1-摘抄</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/wAx42gllz/"" data-c="
+          &lt;h4 id=&#34;概述&#34;&gt;概述&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;环境：Linux（Centos6.8） + PHP5.6.22 + Mysql5.7 + apache2.4 + Thinkphp3.2&lt;/li&gt;
+&lt;li&gt;Thinkphp自带的Sqlser扩展无法正常使用，因此需要自己手动编写扩展文件&lt;/li&gt;
+&lt;li&gt;Linux的mssql扩展，只支持php7.0以下版本，因此，需要将php的版本降低到7以下&lt;/li&gt;
+&lt;li&gt;需要安装扩展
+&lt;ol&gt;
+&lt;li&gt;freetds&lt;/li&gt;
+&lt;li&gt;mssql&lt;/li&gt;
+&lt;li&gt;pdo_dblib&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- more --&gt;
+&lt;h4 id=&#34;过程&#34;&gt;过程&lt;/h4&gt;
+&lt;h6 id=&#34;安装freetds&#34;&gt;安装freetds&lt;/h6&gt;
+&lt;p&gt;该扩展，是为了是PHP支持mssql扩展&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;下载最新版本的freetds（当前是1.00.15版本），下载地址：&lt;code&gt;http://www.freetds.org/software.html&lt;/code&gt;&lt;br&gt;
+个人建议，不要在linux服务器上用wget下载该文件，最好用windows打开，用迅雷下载。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装过程&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;$ tar -zxvf freetds-stable.tgz
+$ cd freetds-1.00.15
+$ ./configure --prefix=/usr/local/freetds --with-tdsver=7.1 --enable-msdblib
+$ make
+$ make install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;--with-tdsver：指定了连接sqlserver的版本
+--enable-msdblib：是否允许Microsoft数据库函数库
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;安装成功，验证&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;$ cd /usr/local/freetds/bin
+$ ./tsql -C
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;显示如下信息，表明freetds安装成功
+&lt;/code&gt;&lt;/pre&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://forkun.github.io/post-images/1603956367712.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h6 id=&#34;安装php的mmsql扩展&#34;&gt;安装PHP的mmsql扩展&lt;/h6&gt;
+&lt;ol&gt;
+&lt;li&gt;找到服务器安装的PHP的版本的源码包，进入PHP的扩展目录：&lt;code&gt;php-5.6.22/ext/mssql&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;执行安装过程：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;$ /usr/local/php/bin/phpize
+$ ./configure --with-php-config=/usr/local/php/bin/php-config --with-mssql=/usr/local/freetds/
+$ make
+$ make install 
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;安装成功之后，会在`/usr/local/php/lib/php/extensions/no-debug-non-zts-20131226`目录生产相应的扩展的`.so`文件，然后需要在php.in文件中，在加载扩展中，添加：`extension=mssql.so`,即将`mssql`扩展开启了。
+然后访问`phpinfo`查看确认`mmsql`扩展安装成功
+&lt;/code&gt;&lt;/pre&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://forkun.github.io/post-images/1603956375645.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h6 id=&#34;安装php的pdo_dblib扩展&#34;&gt;安装PHP的pdo_dblib扩展&lt;/h6&gt;
+&lt;p&gt;期安装过程，参考上面mmsql的安装过程，过程方式是一样的&lt;br&gt;
+在php.ini中开启&lt;code&gt;pdo_dblib&lt;/code&gt;扩展，访问phpinfo查看扩展是否安装成功&lt;br&gt;
+&lt;img src=&#34;https://forkun.github.io/post-images/1603956382528.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;h6 id=&#34;编写自己支持的mssql扩展&#34;&gt;编写自己支持的mssql扩展&lt;/h6&gt;
+&lt;p&gt;Thinkphp自带的是没有mssql支持的DB扩展的，因此需要自己编写一份。&lt;br&gt;
+可以将&lt;code&gt;ThinkPHP/Library/Think/Db/Driver/Sqlsrv.class.php&lt;/code&gt;拷贝一份为：&lt;code&gt;Mssql.class.php&lt;/code&gt;，然后修改其中的连接即可。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;/**
+ * 解析pdo连接的dsn信息
+ * @access public
+ * @param array $config 连接信息
+ * @return string
+ */
+protected function parseDsn($config){
+    $dsn = &#39;&#39;;
+    if (isset($config[&#39;hostname&#39;]) &amp;amp;&amp;amp; isset($config[&#39;hostport&#39;]) &amp;amp;&amp;amp; isset($config[&#39;database&#39;])) {
+        $hostname = trim($config[&#39;hostname&#39;]);
+        $hostport = trim($config[&#39;hostport&#39;]);
+        $database = trim($config[&#39;database&#39;]);
+        $dsn = &amp;quot;dblib:host={$hostname}:{$hostport};dbname={$database}&amp;quot;;
+    }
+    return $dsn;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后，将数据库连接中的连接类型设置为：&lt;code&gt;mssql&lt;/code&gt;即可&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&#39;DB_TYPE&#39;   =&amp;gt; &#39;mssql&#39;, // 数据库类型
+&#39;DB_HOST&#39;   =&amp;gt; &#39;localhost&#39;, // 服务器地址
+&#39;DB_NAME&#39;   =&amp;gt; &#39;thinkphp&#39;, // 数据库名
+&#39;DB_USER&#39;   =&amp;gt; &#39;root&#39;, // 用户名
+&#39;DB_PWD&#39;    =&amp;gt; &#39;123456&#39;, // 密码
+&#39;DB_PORT&#39;   =&amp;gt; 3306, // 端口
+&#39;DB_PREFIX&#39; =&amp;gt; &#39;think_&#39;, // 数据库表前缀 
+&#39;DB_CHARSET&#39;=&amp;gt; &#39;utf8&#39;, // 字符集
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;附件&#34;&gt;附件&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;freetds-patched.tar.gz（链接: http://pan.baidu.com/s/1jIIBa1g 密码: uy4r）&lt;/li&gt;
+&lt;li&gt;Mssql.class.php（链接: http://pan.baidu.com/s/1o7SweLk 密码: eubb）&lt;/li&gt;
+&lt;/ol&gt;
+">Thinkphp安装支持sqlserver扩展（Linux）</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/kyMqZgVds/"" data-c="
+          &lt;h4 id=&#34;说明&#34;&gt;说明&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;环境：&lt;br&gt;
+centos5.6-x64&lt;br&gt;
+php7.0.2&lt;br&gt;
+nginx&lt;/li&gt;
+&lt;li&gt;需求&lt;br&gt;
+需要在服务器上安装sqlserver的扩展，捣鼓了近两天，php7版本的sqlserver扩展非常难安装，实在没法，被迫降级PHP版本，将PHP版本降级我php5.6.29。降级到该版本的原因是，发现该版本的PHP源码包里面，有mssql扩展的（该扩展在PHP7版本取消了）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;思路&#34;&gt;思路&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;直接源码安装php5.6，重新指定新的PHP安装目录，与已有的php区别开来&lt;/li&gt;
+&lt;li&gt;将现在服务器运行的php关闭，运行新安装的php版本&lt;/li&gt;
+&lt;li&gt;这样可以保证即使新安装的php版本有问题，也可以再次运行原有的php，不会导致无法修复的错误出现，便于回滚&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;安装&#34;&gt;安装&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;安装
+&lt;ol&gt;
+&lt;li&gt;在&lt;a href=&#34;http://php.net/get/php-5.6.29.tar.gz/from/a/mirror&#34;&gt;PHP官网&lt;/a&gt;下载php5.6.29版本&lt;/li&gt;
+&lt;li&gt;解压cd进去目录：&lt;code&gt;tar zxf php-5.6.2​.tar.gz&lt;/code&gt;、&lt;code&gt;cd php-5.6.2​&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;一次性安装依赖库：&lt;br&gt;
+&lt;code&gt;yum install gcc gcc-c++ libxml2 libxml2-devel libjpeg-devel libpng-devel freetype-devel openssl-devel libcurl-devel libmcrypt-devel&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;执行安装过程：&lt;pre&gt;&lt;code&gt;​./configure --prefix=/usr/local/php56 --enable-fpm --enable-pcntl --enable-mysqlnd --enable-opcache --enable-sockets --enable-sysvmsg --enable-sysvsem  --enable-sysvshm --enable-shmop --enable-zip --enable-ftp --enable-soap --enable-xml --enable-mbstring --disable-rpath --disable-debug --disable-fileinfo --with-mysql --with-mysqli --with-pdo-mysql --with-pcre-regex --with-iconv --with-zlib --with-mcrypt --with-gd --with-openssl --with-mhash --with-xmlrpc --with-curl --with-imap-ssl
+make
+make install
+cp php.ini-production /usr/local/php/etc/php.ini​
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;启动、重启、关闭
+&lt;ol&gt;
+&lt;li&gt;php-fpm加入环境变量模式&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;cp /usr/local/src/php-5.6.29/sapi/fpm/init.d.php-fpm /etc/init.d/php-fpm #/usr/local/src/php-5.6.29是PHP安装文件夹
+service php-fpm start #启动服务
+service php-fpm stop #关闭服务
+service php-fpm restart #重启
+service php-fpm reload #重载
+/*该命令执行，需要将php-fpm加入环境变量，执行上面的copy步骤*/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;直接执行、启动模式&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;启动：/usr/local/php56/sbin/php-fpm
+关闭：ps aux | grep php-fpm #执行该命令，找到php-fpm的pid直接kill掉即可
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;遇到问题&#34;&gt;遇到问题&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;make 报错：...is not a valid libtool object&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;该错误是在运行configure和make的时候，遇到错误就导致了该问题&lt;br&gt;
+解决办法：make clean 之后在make即可&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;重启php-fpm出错&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;killapp php-fpm 再次重启即可&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;安装完成之后，运行成功，没有问题，但是访问PHP时候报错（没有错误描述，感觉就像是PHP完全没有解析）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;是因为php-fpm.conf中user、group的问题，只需要将用户、用户组改为web账号，用户组重启php-fpm即可&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;安装之后运行redis失败&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;因为在redis等其他按软件安装的时候，只要基于：php-config-path参数的软件安装，都要重新编译一次&lt;/p&gt;
+&lt;/blockquote&gt;
+">PHP版本切换-升级PHP版本-降级PHP版本</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/F09wbxmix/"" data-c="
+          &lt;h4 id=&#34;说明&#34;&gt;说明&lt;/h4&gt;
+&lt;p&gt;遇到需求是需要在服务器A上监控服务器B上的数据库的状态（数据库主从状态）。那么久需要在A上访问B府服务器上的mysql数据库。&lt;/p&gt;
+&lt;p&gt;mysql默认安装完成之后，在mysql.user表中，有默认的3个账号，他们的host分别是：localhost、127.0.0.1、::1，这3个账号，都只能本地访问，不能供其他服务器通过该账号访问mysql数据库。如果需要提供其他服务器访问的话，需要创建一个供外网访问的mysql账号。&lt;/p&gt;
+&lt;p&gt;原本以为很简单，只需要在B服务器上创建一个host=%的账号就可以了，没想到中间遇到了好多的问题。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h4 id=&#34;创建mysql账号grant&#34;&gt;创建mysql账号：grant&lt;/h4&gt;
+&lt;p&gt;如果通过数据库工具（Navicat、PhpMyadmin）创建数据库账号的话，有可视化界面，创建起来也很方面。&lt;/p&gt;
+&lt;p&gt;如果需要提高B格，那就用命令：&lt;code&gt;grant&lt;/code&gt;创建数据库账号&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;grant 赋予用户权限grant有两个作用
+&lt;ol&gt;
+&lt;li&gt;如果被grant授权的用户已经存在，那么授予他该有的权限
+&lt;ol&gt;
+&lt;li&gt;如果该用户已有的权限，低于被赋予的权限的话，提示成功，低权限会覆盖高权限&lt;/li&gt;
+&lt;li&gt;如果该用户已有的权限，高于被赋予的权限的话，提示成功，已有的低权限被覆&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;如果被grant授权的用户不存在，那么创建该用户，并且赋予该用户权限&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;grant常用命令：
+&lt;ol&gt;
+&lt;li&gt;语法概述&lt;br&gt;
+&lt;code&gt;grant 权限 on 数据库.数据表 to 用户@host identified by 密码&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;给普通用户查询、插入、更新、删除db中所有表的权限&lt;br&gt;
+&lt;code&gt;grant select,insert,update,delete on db.* to user&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;创建一个可访问所有库所有表，拥有所有权限的外网可访问的账号(附带密码)&lt;br&gt;
+&lt;code&gt;grant all on *.* to user@&#39;%&#39; identified by &#39;password&#39;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;创建一个允许内网网段访问的账号&lt;br&gt;
+&lt;code&gt;grant all on db.table to user@192.168.137.%&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;查看当前登陆账号的权限&lt;br&gt;
+&lt;code&gt;show grants&lt;/code&gt; 最终展示结果&lt;br&gt;
+&lt;img src=&#34;https://forkun.github.io/post-images/1603956067809.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/li&gt;
+&lt;li&gt;撤销已经赋予给的用户权限&lt;br&gt;
+&lt;code&gt;revoke all on *.* from user@host&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;遇到问题&#34;&gt;遇到问题&lt;/h4&gt;
+&lt;p&gt;满心欢喜的以为创建完用户之后，就可以直接在A服务器上直接使用了，然后用语句测试了一下：&lt;br&gt;
+&lt;img src=&#34;https://forkun.github.io/post-images/1603955948213.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+提醒连接失败，一度认为自己是创建的mysql账号错误了，反复的自己创建账号，删除账号，最终的结果还是一样的报错。通过百度各种博客，最终得到方案，分析说有3中可能&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;my.cnf配置文件中的skip-networking被配置&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;skip-networking被配置的话，会导致所有的TCP/IP端口没有被监听，也就是说，除了本机，其他客户端都无法使用网络连接到本Mysql服务器&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;my.cnf配置文件中的bindaddress被配置&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;bindaddress，该参数可以配置指定哪些IP地址被配置，使得mysql服务器只回应哪些IP地址的请求，所以需要将该参数注释掉&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;防火墙的原因&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;有可能某个端口限制了外网访问情况&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;上面所说的可能1、2都可直接通过my.cnf文件直观看出，不是该原因导致的连接失败，那么很有可能是第三个情况。&lt;/p&gt;
+&lt;p&gt;为了验证该问题，直接关闭防火墙：&lt;code&gt;/etc/init.d/iptables stop&lt;/code&gt;&lt;br&gt;
+再在B服务器上连接mysql，成功了。&lt;/p&gt;
+&lt;p&gt;最终得到结论是：mysql的端口，被防火墙拦截了，所以需要开放3306默认端口的外网访问&lt;/p&gt;
+&lt;h4 id=&#34;防火墙附带&#34;&gt;防火墙（附带）&lt;/h4&gt;
+&lt;p&gt;由于涉及到防火墙的问题，顺带看了下防火墙相关的配置信息&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;防火墙基本命令&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;查看防火墙状态：&lt;code&gt;service iptables status&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;停止防火墙：&lt;code&gt;service iptables stop&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;启动防火墙：&lt;code&gt;service iptables start&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;重启防火墙：&lt;code&gt;service iptables reload&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;永久关闭防火墙：&lt;code&gt;chkconfig iptables off&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;永久关闭防火墙之后-再次启动防火墙：&lt;code&gt;chkconfig iptables on&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;运行查看防火墙状态得到结果：&lt;br&gt;
+&lt;img src=&#34;https://forkun.github.io/post-images/1603955958109.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;分析结果得知，3306端口被drop掉了，不被接受，所以需要将3306端口开放给外网可访问&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;编辑防火墙开放端口：&lt;code&gt;vim /etc/sysconfig/iptables&lt;/code&gt;&lt;br&gt;
+&lt;img src=&#34;https://forkun.github.io/post-images/1603955973761.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;将3306端口的&lt;code&gt;DROP&lt;/code&gt;改为&lt;code&gt;ACCEPT&lt;/code&gt;即可&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;再次在A服务器上连接B服务器上的MYSQL服务器，提示成功。&lt;/p&gt;
+&lt;h4 id=&#34;参考博客&#34;&gt;参考博客&lt;/h4&gt;
+&lt;p&gt;非常感激下面几位博主分享的内容。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.csdn.net/longxibendi/article/details/6363934&#34;&gt;ERROR 2003 (HY000): Can&#39;t connect to MySQL server&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.cnblogs.com/hcbin/archive/2010/04/23/1718379.html&#34;&gt;[MySQL] - MySQL的Grant命令&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.csdn.net/jemlee2002/article/details/7042991&#34;&gt;CentOS 配置防火墙操作实例（启、停、开、闭端口）&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+">Mysql创建外部访问账号以及问题</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/i3yTTIfn0/"" data-c="
+          &lt;h4 id=&#34;说明&#34;&gt;说明&lt;/h4&gt;
+&lt;p&gt;数据库配置了主从同步，一些数据分析等读操作，全部数据从从库来读取。&lt;br&gt;
+但是如果主从同步延迟或者断掉自后，分析的数据就不会再实时了。&lt;br&gt;
+而且又不能实时的看着数据库的主从状态，因此是希望能在主从延迟的时候，能自动提醒下。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h4 id=&#34;思路&#34;&gt;思路&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;用mysql的&lt;code&gt;show slave status&lt;/code&gt;查询出当前的从库情况&lt;/li&gt;
+&lt;li&gt;当分析结果发现延迟的时候，直接发送消息到指定的用户&lt;/li&gt;
+&lt;li&gt;用linux的crontab定时任务去持续读取分析结果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;过程&#34;&gt;过程&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;如果监控服务器和从库不在同一台服务器上，那么需要在从库服务器创建一个外部服务器可访问的账号&lt;code&gt;grant all on *.* to &#39;user&#39;@&#39;%&#39; identified by &#39;userpwd&#39;;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;执行SQL查询：&lt;code&gt;show slave status&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;执行取得的结果进行分析&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;源码&#34;&gt;源码&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;//假设已经有了mysql查询连接对象
+$content = array();
+$res = $mysql_link-&amp;gt;query(&#39;show slave status&#39;);    //该结果返回的是多个从库的同步信息
+if ($res) {
+    foreach ($res as $one) {
+        if ($one[&#39;slave_io_running&#39;] == &#39;Yes&#39; &amp;amp;&amp;amp; $one[&#39;slave_sql_running&#39;] == &#39;Yes&#39; &amp;amp;&amp;amp; $one[&#39;seconds_behind_master&#39;] &amp;lt; $seconds_behind_master) {
+            //正常
+        } else {
+            $content_one .= &#39;监测到服务器【&#39; . $one[&#39;channel_name&#39;] . &#39;】数据库主从同步发生异常，异常信息：&#39;;
+            if ($one[&#39;slave_io_running&#39;] != &#39;Yes&#39;) {
+                $content_one .= &#39;slave_io_running异常。&#39;;
+            }
+            if ($one[&#39;slave_sql_running&#39;] != &#39;Yes&#39;) {
+                $content_one .= &#39;slave_sql_running异常。&#39;;
+            }
+            if ($one[&#39;seconds_behind_master&#39;] &amp;gt;= $seconds_behind_master) {
+                $content_one .= &#39;seconds_behind_master异常延迟了&#39; . $one[&#39;seconds_behind_master&#39;] . &#39;秒。&#39;;
+            }
+            $content[] = $content_one;
+        }
+    }
+}
+//发送提醒
+if (!empty($content)) {
+	//notice_user
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+">Mysql数据库从库监控提醒</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/SDKaaBhYc/"" data-c="
+          &lt;h4 id=&#34;概述&#34;&gt;概述&lt;/h4&gt;
+&lt;p&gt;H5页面，需要加入一个音乐，然后要对音乐进行开、关控制。&lt;/p&gt;
+&lt;p&gt;首先H5加入音乐的话，需要用到H5的audio标签。&lt;/p&gt;
+&lt;p&gt;然后为了在页面上做音乐开关的控制，替换了默认的音乐播放器的图片，找了一个漂亮的音乐icon替代。&lt;/p&gt;
+&lt;p&gt;为了音乐播放过程的美观，需要对音乐icon控制，音乐播放的时候，图片旋转，暂定的时候，图片停止旋转。因此用到Jquery的插件：&lt;code&gt;JqueryRotate&lt;/code&gt;。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h4 id=&#34;h5-audio标签&#34;&gt;H5-audio标签&lt;/h4&gt;
+&lt;h5 id=&#34;说明&#34;&gt;说明&lt;/h5&gt;
+&lt;p&gt;标签定义声音，比如音乐或者其他音频流。是HTML5的新标签。&lt;br&gt;
+由于老的浏览器不兼容。因此可以在&lt;code&gt;audio&lt;/code&gt;标签之间，放置需要默认显示的内容&lt;br&gt;
+例如：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;audio src=&amp;quot;/path/test.mp3&amp;quot;&amp;gt;
+	您的浏览器不支持audio标签
+&amp;lt;/audio&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;属性&#34;&gt;属性&lt;/h5&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
-&lt;th&gt;表头1&lt;/th&gt;
-&lt;th&gt;表头2&lt;/th&gt;
-&lt;th&gt;表头3&lt;/th&gt;
+&lt;th&gt;属性&lt;/th&gt;
+&lt;th&gt;值&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
 &lt;tbody&gt;
 &lt;tr&gt;
-&lt;td&gt;aa&lt;/td&gt;
-&lt;td&gt;bb&lt;/td&gt;
-&lt;td&gt;cc&lt;/td&gt;
+&lt;td&gt;autoplay&lt;/td&gt;
+&lt;td&gt;autoplay&lt;/td&gt;
+&lt;td&gt;如果出现该属性，则音频在就绪后，马上播放。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-&lt;td&gt;aaa&lt;/td&gt;
-&lt;td&gt;bbb&lt;/td&gt;
-&lt;td&gt;ccc&lt;/td&gt;
+&lt;td&gt;controls&lt;/td&gt;
+&lt;td&gt;controls&lt;/td&gt;
+&lt;td&gt;如果出现该属性，则向用户显示控件，比如播放器按钮等。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;loop&lt;/td&gt;
+&lt;td&gt;loop&lt;/td&gt;
+&lt;td&gt;如果出现该属性，则每当音频结束时都会重新开始播放。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;preload&lt;/td&gt;
+&lt;td&gt;preload&lt;/td&gt;
+&lt;td&gt;如果出现该属性，则音频在页面加载时进行加载，并预备播放。如果使用 &amp;quot;autoplay&amp;quot;，则忽略该属性。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;src&lt;/td&gt;
+&lt;td&gt;url&lt;/td&gt;
+&lt;td&gt;要引用的音频文件的路径。&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://forkun.github.io/post-images/201209111121059556.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
-&lt;!-- ![201209111135567915](https://forkun.github.io/post-images/201209111135567915.jpg) --&gt;">demo002</a>
+&lt;h5 id=&#34;示例&#34;&gt;示例&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;audio src=&amp;quot;test.mp3&amp;quot; loop controls autoplay=&amp;quot;autoplay&amp;quot; id=&amp;quot;audio&amp;quot;&amp;gt;
+	您的浏览器不支持audio标签
+&amp;lt;/audio&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;该音频，会在该页面打开的时候，直接播放&lt;code&gt;test.mp3&lt;/code&gt;文件，并且显示默认的控件。&lt;br&gt;
+最终真实效果：&lt;br&gt;
+&lt;img src=&#34;https://forkun.github.io/post-images/1603955732543.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;js-控制播放&#34;&gt;JS-控制播放&lt;/h4&gt;
+&lt;h5 id=&#34;关于js控制音频文件的事件目前只整理2个&#34;&gt;关于JS控制音频文件的事件，目前只整理2个&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;1. play() 播放
+2. pause() 暂停（非停止，再次播放，会连续上次的播放节点）
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;示例-2&#34;&gt;示例&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;js示例代码&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+	var audio = document.getElementById(&amp;quot;audio&amp;quot;);
+	audio.play();	//播放
+	audio.pause();	//暂停
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;jquery示例代码&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+	var audio = $(&amp;quot;#audio&amp;quot;)[0];
+	audio.play();	//播放
+	audio.pause();	//暂停
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;其他说明：&lt;br&gt;
+JS操作获得的是audio对象，因此可以直接操作play、pause&lt;br&gt;
+Jquery选择器获取的是jquery对象，0才是对应的audio对象，所以不能直接操作。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;jqueryrotate-图片旋转&#34;&gt;JqueryRotate-图片旋转&lt;/h4&gt;
+&lt;h5 id=&#34;介绍&#34;&gt;介绍&lt;/h5&gt;
+&lt;p&gt;JqueryRotate，可以实现旋转效果的jquery插件。支持所有主流浏览器。&lt;br&gt;
+可以在其 &lt;a href=&#34;http://jqueryrotate.com/&#34;&gt;官网&lt;/a&gt; 获取下载资源以及使用案例。&lt;/p&gt;
+&lt;h5 id=&#34;使用示例&#34;&gt;使用示例&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;img src=&amp;quot;./yinyue.png&amp;quot; alt=&amp;quot;&amp;quot; id=&amp;quot;img&amp;quot;&amp;gt;
+&amp;lt;script src=&amp;quot;http://apps.bdimg.com/libs/jquery/2.1.1/jquery.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;./jQueryRotate.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script&amp;gt;
+	// 直接旋转45度（向右旋转）
+	$(&#39;#img&#39;).rotate(45);
+	$(&#39;#img&#39;).rotate({angle:45});
+
+	// 鼠标事件控制：获取鼠标右转180度，鼠标离开回归原始
+	$(&#39;#img&#39;).rotate({ 
+	    bind : {
+	        mouseover : function(){
+	            $(this).rotate({animateTo: 180});
+	        }, mouseout : function(){
+	            $(this).rotate({animateTo: 0});
+	        }
+	    }
+	});
+
+	// 不停的旋转
+	var angle = 0;
+	setInterval(function(){
+	    angle +=3;
+	    $(&#39;#img&#39;).rotate(angle);
+	}, 15);
+
+	// 间隔旋转，每次旋转都会有停顿
+	var rotation = function (){
+	    $(&#39;#img&#39;).rotate({
+	        angle: 0, 
+	        animateTo: 360, 
+	        callback: rotation
+	    });
+	}
+	rotation();
+
+	// 不停旋转，中间没有卡顿
+	var rotation2 = function(){
+	    $(&#39;#img&#39;).rotate({
+	        angle: 0, 
+	        animateTo: 360, 
+	        callback: rotation2,
+	        easing: function(x,t,b,c,d){
+	            return c*(t/d)+b;
+	        }
+	    });
+	}
+	rotation2();
+
+	// 点击旋转
+	$(&#39;#img&#39;).rotate({ 
+	    bind: {
+	        click: function(){
+	            $(this).rotate({
+	                angle: 0,
+	                animateTo: 360,
+	                easing: $.easing.easeInOutExpo
+	            });
+	        }
+	    }
+	});
+
+
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;参数说明&#34;&gt;参数说明&lt;/h5&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;参数&lt;/th&gt;
+&lt;th&gt;类型&lt;/th&gt;
+&lt;th&gt;默认值&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;angle&lt;/td&gt;
+&lt;td&gt;数字&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;旋转一个角度&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;animateTo&lt;/td&gt;
+&lt;td&gt;数字&lt;/td&gt;
+&lt;td&gt;0&lt;/td&gt;
+&lt;td&gt;从当前的角度，旋转到多少度&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;step&lt;/td&gt;
+&lt;td&gt;函数&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;每个动画步骤中执行的回调函数，当前角度值作为该函数的第一个参数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;easing&lt;/td&gt;
+&lt;td&gt;函数&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;定义旋转速度、旋转效果，但是需要加载：jQuery.easing.js&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;duration&lt;/td&gt;
+&lt;td&gt;整数&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;旋转持续时间，以毫秒为单位&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;callback&lt;/td&gt;
+&lt;td&gt;函数&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;旋转完成后的回调函数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;getRotateAngle&lt;/td&gt;
+&lt;td&gt;函数&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;返回旋转对象的当前的旋转角度&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;stopRotate&lt;/td&gt;
+&lt;td&gt;函数&lt;/td&gt;
+&lt;td&gt;无&lt;/td&gt;
+&lt;td&gt;停止旋转&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;blockquote&gt;
+&lt;p&gt;演示虽然使用的是图片，但 jqueryrotate 并不只是能运用在图片上，其他元素如 div 等也可以使用。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;最终效果&#34;&gt;最终效果&lt;/h4&gt;
+&lt;h5 id=&#34;思路&#34;&gt;思路&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;用audio标签，完成音频文件的引用，设置标签循环播放，不自动播放（让JS控制播放）&lt;/li&gt;
+&lt;li&gt;美化：将audio标签设置为隐藏&lt;code&gt;style=&amp;quot;display:none;&amp;quot;&lt;/code&gt;，用其他图片代替，用图片的JS时间，控制播放、暂停&lt;/li&gt;
+&lt;li&gt;美化：用&lt;code&gt;jqueryrotate&lt;/code&gt;插件美化图片的旋转效果，图片旋转随着音乐的播放和暂停来旋转和不旋转&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5 id=&#34;源码&#34;&gt;源码&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;img src=&amp;quot;yinyue.svg&amp;quot; alt=&amp;quot;&amp;quot; class=&amp;quot;rotate&amp;quot; id=&amp;quot;music_img&amp;quot;&amp;gt;
+&amp;lt;audio id=&amp;quot;media&amp;quot; src=&amp;quot;test.mp3&amp;quot; loop=&amp;quot;loop&amp;quot;style=&amp;quot;display:none&amp;quot;&amp;gt;
+	您的浏览器不支持audio标签
+&amp;lt;/audio&amp;gt;
+
+&amp;lt;script src=&amp;quot;http://apps.bdimg.com/libs/jquery/2.1.1/jquery.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script src=&amp;quot;jQueryRotate.js&amp;quot;&amp;gt;&amp;lt;/script&amp;gt;
+&amp;lt;script type=&amp;quot;text/javascript&amp;quot;&amp;gt;
+	$(function () {
+		if ($(&amp;quot;#music_img&amp;quot;).length &amp;gt; 0) {
+			var Media = $(&amp;quot;#media&amp;quot;)[0];
+			if ($(&amp;quot;#music_img&amp;quot;).hasClass(&#39;rotate&#39;)) {
+				var angle = 0;
+				setInterval(function(){
+					angle +=3;
+					$(&#39;.rotate&#39;).rotate(angle);
+				}, 15);
+				Media.play();
+			}
+			$(&amp;quot;#music_img&amp;quot;).on(&amp;quot;click&amp;quot;, function () {
+				if ($(this).hasClass(&#39;rotate&#39;)) {
+					Media.pause();
+					$(this).addClass(&#39;off&#39;).removeClass(&#39;rotate&#39;);
+				} else {
+					Media.play();
+					$(this).addClass(&#39;rotate&#39;).removeClass(&#39;off&#39;);
+				}
+			});
+		}
+	});
+&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h5 id=&#34;最终效果-2&#34;&gt;最终效果&lt;/h5&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://forkun.github.io/post-images/1603955714741.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在静态图片上，显示不出旋转效果，其实图片是旋转的&lt;br&gt;
+点击旋转中的图标，图标停止旋转，音乐暂停&lt;br&gt;
+点击暂停的图标，图标开始旋转，音乐继续&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;主要参考：&lt;br&gt;
+http://www.tuicool.com/articles/ZfU7ju&lt;br&gt;
+http://www.dowebok.com/72.html&lt;br&gt;
+http://www.w3school.com.cn/tags/tag_audio.asp&lt;/p&gt;
+">h5 audio JS控制音乐开关</a>
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/aF3gGCSAe/"" data-c="
-          &lt;p&gt;测试文章&lt;/p&gt;
-&lt;h4 id=&#34;测试标题&#34;&gt;测试标题&lt;/h4&gt;
-&lt;h5 id=&#34;测试图片相关&#34;&gt;测试图片相关&lt;/h5&gt;
-&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://forkun.github.io/post-images/1603949698546.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
-">demo001</a>
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/gRGr_c1ZO/"" data-c="
+          &lt;h4 id=&#34;说明&#34;&gt;说明&lt;/h4&gt;
+&lt;p&gt;该文档，系自己在学习Thinkphp过程中，一些小笔记、备忘，为了再次使用、查询费方便，所以记录下来，以便自己再次查询使用。&lt;br&gt;
+文档根据Thinkphp3.2版本官方手册整理。&lt;/p&gt;
+&lt;h4 id=&#34;url模式&#34;&gt;URL模式&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;普通模式&lt;/p&gt;
+&lt;p&gt;也就是传统的GET传参模式指定当前访问的模块和操作&lt;br&gt;
+&lt;code&gt;http://localhost/?m=home&amp;amp;c=user&amp;amp;a=login&amp;amp;var=value&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;PATHINFO模式&lt;/p&gt;
+&lt;p&gt;系统默认的URL模式&lt;br&gt;
+&lt;code&gt;http://localhost/index.php/home/user/login/var/value/&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;REVRITE模式&lt;/p&gt;
+&lt;p&gt;在PATHINFO的基础上，添加了重写规则，个人理解，其实就是在PATHINFO模式中，把index.php去掉而已，但是URL方式确实更好看了，个人常用该方式&lt;br&gt;
+&lt;code&gt;http://localhost/home/user/login/var/value&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;兼容模式&lt;/p&gt;
+&lt;p&gt;用于不支持PATHINFO模式的特殊环境&lt;br&gt;
+&lt;code&gt;http://localhost/?s=/home/user/login/var/value&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;模型model&#34;&gt;模型Model&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;where条件表达式对照表&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;表达式&lt;/th&gt;
+&lt;th&gt;含义&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;EQ&lt;/td&gt;
+&lt;td&gt;等于（=）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;NEQ&lt;/td&gt;
+&lt;td&gt;不等于（!=、&amp;lt;&amp;gt;）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;GT&lt;/td&gt;
+&lt;td&gt;大于（&amp;gt;）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;EGT&lt;/td&gt;
+&lt;td&gt;大于等于（&amp;gt;=）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;LT&lt;/td&gt;
+&lt;td&gt;小于（&amp;lt;）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ELT&lt;/td&gt;
+&lt;td&gt;小于等于（&amp;lt;=）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;LIKE&lt;/td&gt;
+&lt;td&gt;模糊查询 like&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;[NOT] BETWEEN&lt;/td&gt;
+&lt;td&gt;（不在）区间查询&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;[NOT] IN&lt;/td&gt;
+&lt;td&gt;（不在）IN查询&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;模板&#34;&gt;模板&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;系统函数使用&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;md5&lt;pre&gt;&lt;code&gt;{$data.name|md5}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;date&lt;pre&gt;&lt;code&gt;{$create_time|date=&amp;quot;y-m-d&amp;quot;,###}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;substr&lt;pre&gt;&lt;code&gt;{$data.name|substr=0,3}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;系统内置标签&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;volist标签-循环数据&lt;pre&gt;&lt;code&gt;&amp;lt;volist name=&amp;quot;list&amp;quot;id=&amp;quot;vo&amp;quot;&amp;gt;
+{$vo.id}:{$vo.name}
+&amp;lt;/volist&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;foreach 标签&lt;pre&gt;&lt;code&gt;&amp;lt;foreach name=&amp;quot;list&amp;quot; item=&amp;quot;vo&amp;quot; key=&amp;quot;k&amp;quot; &amp;gt;
+{$k}|{$vo.id}:{$vo.name}
+&amp;lt;/foreach&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;for标签&lt;pre&gt;&lt;code&gt;&amp;lt;for start=&amp;quot;1&amp;quot; end=&amp;quot;100&amp;quot;&amp;gt;
+{$i}
+&amp;lt;/for&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;switch标签&lt;pre&gt;&lt;code&gt;&amp;lt;switch name=&amp;quot;User.level&amp;quot;&amp;gt;
+&amp;lt;case value=&amp;quot;1&amp;quot;&amp;gt;value1&amp;lt;/case&amp;gt;
+&amp;lt;case value=&amp;quot;2&amp;quot;&amp;gt;value2&amp;lt;/case&amp;gt;
+&amp;lt;default /&amp;gt;default
+&amp;lt;/switch&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;if标签&lt;pre&gt;&lt;code&gt;&amp;lt;if condition=&amp;quot;$id lt 5 &amp;quot;&amp;gt;
+value1
+&amp;lt;else /&amp;gt;
+value2
+&amp;lt;/if&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+">Thinkphp笔记</a>
       </div>
       
       <div class="item">
-        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/nei-biao-xiang-guan-cao-zuo/"" data-c="
-          &lt;h3 id=&#34;获取内表长度&#34;&gt;获取内表长度&lt;/h3&gt;
-&lt;p&gt;分2步操作获取内表长度&lt;/p&gt;
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/D0yyyA-3t/"" data-c="
+          &lt;h5 id=&#34;概述&#34;&gt;概述&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;订单存放长度的整型变量&lt;/li&gt;
-&lt;li&gt;获取长度存入到整型变量&lt;/li&gt;
+&lt;li&gt;环境：centos6.7 + lamp&lt;/li&gt;
+&lt;li&gt;应用：运用laravel的artisan自己扩展执行脚本&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;DATA: lv_cnt_res TYPE i.
-
-DESCRIBE TABLE &amp;lt;itab_name&amp;gt; LINES lv_cnt_res .
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;内表更新without-loop&#34;&gt;内表更新（without loop）&lt;/h3&gt;
-&lt;p&gt;思路：&lt;/p&gt;
+&lt;h5 id=&#34;问题&#34;&gt;问题&lt;/h5&gt;
+&lt;p&gt;使用&lt;code&gt;crontab&lt;/code&gt;配置自动任务，脚本没有任何执行，但是手动执行脚本，就能执行通过，没有任何的问题&lt;/p&gt;
+&lt;h5 id=&#34;解决过程&#34;&gt;解决过程&lt;/h5&gt;
 &lt;ul&gt;
-&lt;li&gt;定义与内表相同的一个结构，在结构中赋值需要更新的内容。&lt;/li&gt;
-&lt;li&gt;将结构modify到内表，并指定要modify的字段&lt;/li&gt;
+&lt;li&gt;怀疑文件权限的问题，所以为文件添加了执行权限，未能解决&lt;/li&gt;
+&lt;li&gt;怀疑脚本本身问题，单独写了一个简单的&lt;code&gt;file_put_contents&lt;/code&gt;到一个&lt;code&gt;log&lt;/code&gt;文件，每分钟执行一次，在&lt;code&gt;log&lt;/code&gt;文件的目录通过执行&lt;code&gt;ll&lt;/code&gt;命令，的到信息：&lt;code&gt;You have new mail in /var/spool/mail/root&lt;/code&gt;，感觉有眉目，继续下追。&lt;/li&gt;
+&lt;li&gt;在&lt;code&gt;/var/spool/mail/root&lt;/code&gt;文件，的到内容：&lt;pre&gt;&lt;code&gt;From root@centos67-x64  Sun Sep 25 22:34:02 2016
+Return-Path: &amp;lt;root@centos67-x64&amp;gt;
+Received: from centos67-x64 (localhost [127.0.0.1])
+	by centos67-x64 (8.14.4/8.14.4) with ESMTP id u8PEY2ia027608
+	for &amp;lt;root@centos67-x64&amp;gt;; Sun, 25 Sep 2016 22:34:02 +0800
+Received: (from root@localhost)
+	by centos67-x64 (8.14.4/8.14.4/Submit) id u8PEY292027604;
+	Sun, 25 Sep 2016 22:34:02 +0800
+Date: Sun, 25 Sep 2016 22:34:02 +0800
+Message-Id: &amp;lt;201609251434.u8PEY292027604@centos67-x64&amp;gt;
+From: root@centos67-x64 (Cron Daemon)
+To: root@centos67-x64
+Subject: Cron &amp;lt;root@centos67-x64&amp;gt; 
+root php /www/laravel/artisan email:send &amp;gt;&amp;gt; /dev/null
+Content-Type: text/plain; charset=UTF-8
+Auto-Submitted: auto-generated
+X-Cron-Env: &amp;lt;LANG=en_US.UTF-8&amp;gt;
+X-Cron-Env: &amp;lt;SHELL=/bin/sh&amp;gt;
+X-Cron-Env: &amp;lt;HOME=/root&amp;gt;
+X-Cron-Env: &amp;lt;PATH=/usr/bin:/bin&amp;gt;
+X-Cron-Env: &amp;lt;LOGNAME=root&amp;gt;
+X-Cron-Env: &amp;lt;USER=root&amp;gt;
+
+/bin/sh: root: command not found
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;通过内容&lt;code&gt;/bin/sh: root: command not found&lt;/code&gt;发现是&lt;code&gt;root&lt;/code&gt;命令问题，因此通过&lt;code&gt;crontab -e&lt;/code&gt;命令运行的时候，不在加&lt;code&gt;user&lt;/code&gt;参数，问题的到解决&lt;/li&gt;
+&lt;li&gt;最终&lt;code&gt;crontab -l&lt;/code&gt;结果样式：&lt;pre&gt;&lt;code&gt;*/1 * * * * php /www/laravel/artisan email:send &amp;gt;&amp;gt; /dev/null
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-&lt;pre&gt;&lt;code&gt;DATA: gs_head type ty_head .
-gs_head-chkbox = &#39;X&#39; .
+">linux crontab 命令不执行</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/O2MQEk3DN/"" data-c="
+          &lt;h5 id=&#34;概述&#34;&gt;概述&lt;/h5&gt;
+&lt;blockquote&gt;
+&lt;p&gt;最近通过&lt;code&gt;navicat&lt;/code&gt;软件查看对象信息，看到表结构中，表名、字段名都是用双引号&lt;code&gt;&amp;quot;&lt;/code&gt;包含的，这样的话,就到只了所有的DDL语句，都没法直接拷贝运行的。然后自己在服务器上执行了：&lt;code&gt;show create table tablename&lt;/code&gt;，发现结果集仍然是双引号包含。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5 id=&#34;解决过程&#34;&gt;解决过程&lt;/h5&gt;
+&lt;p&gt;开始的时候，以为是&lt;code&gt;navicat&lt;/code&gt;软件的问题，但是发现该软件练级额的其他的数据库都不会出现这个双引号的问题，所以，最终定位到应该是数据库配置的问题&lt;code&gt;my.cnf&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;记得当时遇到过数据库&lt;code&gt;insert&lt;/code&gt;语句，插入datetime格式的字段值：&lt;code&gt;0000-00-00 00:00:00&lt;/code&gt;时，报错，所以更改了&lt;code&gt;my.cnf&lt;/code&gt;的&lt;code&gt;sql_mode&lt;/code&gt;配置。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sql_mode=&#39;NO_AUTO_VALUE_ON_ZERO,STRICT_TRANS_TABLES,
+ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,
+NO_ENGINE_SUBSTITUTION,PIPES_AS_CONCAT,ANSI_QUOTES&#39;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;通过翻阅网上资料看到这样一句：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;ANSI QUOTES A double quote (&amp;quot;) is now treated as an identifier quote (`). Strings can only be quoted with a single quote (’)&lt;br&gt;
+反引号、双引号用来引用表名，字段名称，单引号用来引用字符串。&lt;br&gt;
+IGNORE_SPACEThis sql_mode allows a space between a built-in function and the open parenthesis&lt;br&gt;
+在内建函数中忽略多余的空白&lt;br&gt;
+STRICT_ALL_TABLESWhen this sql_mode&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;所以，将&lt;code&gt;sql_mode&lt;/code&gt;中的最后一句：&lt;code&gt;ANSI_QUOTES&lt;/code&gt;去掉，重启mysql服务即可&lt;/p&gt;
+">Mysql DDL表结构的SQL语句用双引号不是反单引号</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/YwW7zGv8F/"" data-c="
+          &lt;h5 id=&#34;概述&#34;&gt;概述&lt;/h5&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Jquery multiple table to excel&lt;br&gt;
+jquery2table 是将当前页面的table导出excel，需求是这样的：当前页面有多个table表，需要导出所有的table到一个excel文件中，多个table分成多个sheet表。该需求可以运用phpexcel技术实现，但是由于当前页面，不涉及分页，所以就想省略对服务器的请求直接当前页面导出&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h5 id=&#34;实现过程&#34;&gt;实现过程&lt;/h5&gt;
+&lt;ol&gt;
+&lt;li&gt;JS代码&lt;pre&gt;&lt;code&gt;/**
+ * Created by kxk on 2016/9/19.
+ */
+var tablesToExcel = (function () {
+    var uri = &#39;data:application/vnd.ms-excel;base64,&#39;
+        , tmplWorkbookXML = &#39;&amp;lt;?xml version=&amp;quot;1.0&amp;quot;?&amp;gt;&amp;lt;?mso-application progid=&amp;quot;Excel.Sheet&amp;quot;?&amp;gt;&amp;lt;Workbook xmlns=&amp;quot;urn:schemas-microsoft-com:office:spreadsheet&amp;quot; xmlns:ss=&amp;quot;urn:schemas-microsoft-com:office:spreadsheet&amp;quot;&amp;gt;&#39;
+        + &#39;&amp;lt;DocumentProperties xmlns=&amp;quot;urn:schemas-microsoft-com:office:office&amp;quot;&amp;gt;&amp;lt;Author&amp;gt;Axel Richter&amp;lt;/Author&amp;gt;&amp;lt;Created&amp;gt;{created}&amp;lt;/Created&amp;gt;&amp;lt;/DocumentProperties&amp;gt;&#39;
+        + &#39;&amp;lt;Styles&amp;gt;&#39;
+        + &#39;&amp;lt;Style ss:ID=&amp;quot;Currency&amp;quot;&amp;gt;&amp;lt;NumberFormat ss:Format=&amp;quot;Currency&amp;quot;&amp;gt;&amp;lt;/NumberFormat&amp;gt;&amp;lt;/Style&amp;gt;&#39;
+        + &#39;&amp;lt;Style ss:ID=&amp;quot;Date&amp;quot;&amp;gt;&amp;lt;NumberFormat ss:Format=&amp;quot;Medium Date&amp;quot;&amp;gt;&amp;lt;/NumberFormat&amp;gt;&amp;lt;/Style&amp;gt;&#39;
+        + &#39;&amp;lt;/Styles&amp;gt;&#39;
+        + &#39;{worksheets}&amp;lt;/Workbook&amp;gt;&#39;
+        , tmplWorksheetXML = &#39;&amp;lt;Worksheet ss:Name=&amp;quot;{nameWS}&amp;quot;&amp;gt;&amp;lt;Table&amp;gt;{rows}&amp;lt;/Table&amp;gt;&amp;lt;/Worksheet&amp;gt;&#39;
+        , tmplCellXML = &#39;&amp;lt;Cell{attributeStyleID}{attributeFormula}&amp;gt;&amp;lt;Data ss:Type=&amp;quot;{nameType}&amp;quot;&amp;gt;{data}&amp;lt;/Data&amp;gt;&amp;lt;/Cell&amp;gt;&#39;
+        , base64 = function (s) {
+        return window.btoa(unescape(encodeURIComponent(s)))
+    }
+        , format = function (s, c) {
+        return s.replace(/{(\w+)}/g, function (m, p) {
+            return c[p];
+        })
+    }
+    return function (tables, wsnames, wbname, appname) {
+        var ctx = &amp;quot;&amp;quot;;
+        var workbookXML = &amp;quot;&amp;quot;;
+        var worksheetsXML = &amp;quot;&amp;quot;;
+        var rowsXML = &amp;quot;&amp;quot;;
 
-MODIFY gt_head FROM gs_head TRANSPORTING chkbox WHERE chkbox &amp;lt;&amp;gt; &#39;X&#39; .
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;内表合并merge&#34;&gt;内表合并（merge）&lt;/h3&gt;
-&lt;p&gt;将2个结构相同的内表进行合并&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;append lines of itab1 to itab2.
+        for (var i = 0; i &amp;lt; tables.length; i++) {
+            if (!tables[i].nodeType) tables[i] = document.getElementById(tables[i]);
+            for (var j = 0; j &amp;lt; tables[i].rows.length; j++) {
+                rowsXML += &#39;&amp;lt;Row&amp;gt;&#39;
+                for (var k = 0; k &amp;lt; tables[i].rows[j].cells.length; k++) {
+                    var dataType = tables[i].rows[j].cells[k].getAttribute(&amp;quot;data-type&amp;quot;);
+                    var dataStyle = tables[i].rows[j].cells[k].getAttribute(&amp;quot;data-style&amp;quot;);
+                    var dataValue = tables[i].rows[j].cells[k].getAttribute(&amp;quot;data-value&amp;quot;);
+                    dataValue = (dataValue) ? dataValue : tables[i].rows[j].cells[k].innerHTML;
+                    var dataFormula = tables[i].rows[j].cells[k].getAttribute(&amp;quot;data-formula&amp;quot;);
+                    dataFormula = (dataFormula) ? dataFormula : (appname == &#39;Calc&#39; &amp;amp;&amp;amp; dataType == &#39;DateTime&#39;) ? dataValue : null;
+                    ctx = {
+                        attributeStyleID: (dataStyle == &#39;Currency&#39; || dataStyle == &#39;Date&#39;) ? &#39; ss:StyleID=&amp;quot;&#39; + dataStyle + &#39;&amp;quot;&#39; : &#39;&#39;
+                        ,
+                        nameType: (dataType == &#39;Number&#39; || dataType == &#39;DateTime&#39; || dataType == &#39;Boolean&#39; || dataType == &#39;Error&#39;) ? dataType : &#39;String&#39;
+                        ,
+                        data: (dataFormula) ? &#39;&#39; : dataValue
+                        ,
+                        attributeFormula: (dataFormula) ? &#39; ss:Formula=&amp;quot;&#39; + dataFormula + &#39;&amp;quot;&#39; : &#39;&#39;
+                    };
+                    rowsXML += format(tmplCellXML, ctx);
+                }
+                rowsXML += &#39;&amp;lt;/Row&amp;gt;&#39;
+            }
+            ctx = {rows: rowsXML, nameWS: wsnames[i] || &#39;Sheet&#39; + i};
+            worksheetsXML += format(tmplWorksheetXML, ctx);
+            rowsXML = &amp;quot;&amp;quot;;
+        }
+        ctx = {created: (new Date()).getTime(), worksheets: worksheetsXML};
+        workbookXML = format(tmplWorkbookXML, ctx);
 
-append lines of itab1 to itab3.
-append lines of itab2 to itab3.
+        var link = document.createElement(&amp;quot;A&amp;quot;);
+        link.href = uri + base64(workbookXML);
+        link.download = wbname || &#39;Workbook.xls&#39;;
+        link.target = &#39;_blank&#39;;
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+})();
 &lt;/code&gt;&lt;/pre&gt;
-&lt;h3 id=&#34;删除内表重复项&#34;&gt;删除内表重复项&lt;/h3&gt;
-&lt;p&gt;做删除重复项动作之前，&lt;strong&gt;先对内表进行排序&lt;/strong&gt;。&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# 根据某个字段的重复规则删除
-DELETE ADJACENT DUPLICATES FROM itab COMPARING /BIC/ZCUS/BIC/ZXFRQ.
-# 根据所有字段的重复规则删除
-DELETE ADJACENT DUPLICATES FROM itab COMPARING ALL FIELDS.
+&lt;/li&gt;
+&lt;li&gt;HTML代码&lt;pre&gt;&lt;code&gt;&amp;lt;table id=&amp;quot;tbl1&amp;quot; class=&amp;quot;table2excel&amp;quot;&amp;gt;
+	&amp;lt;tr&amp;gt;
+		&amp;lt;td&amp;gt;a&amp;lt;/td&amp;gt;
+		&amp;lt;td&amp;gt;b&amp;lt;/td&amp;gt;
+		&amp;lt;td&amp;gt;c&amp;lt;/td&amp;gt;
+	&amp;lt;/tr&amp;gt;
+	&amp;lt;tr&amp;gt;
+		&amp;lt;td&amp;gt;aa&amp;lt;/td&amp;gt;
+		&amp;lt;td&amp;gt;bb&amp;lt;/td&amp;gt;
+		&amp;lt;td&amp;gt;cc&amp;lt;/td&amp;gt;
+	&amp;lt;/tr&amp;gt;
+	&amp;lt;tr&amp;gt;
+		&amp;lt;td&amp;gt;aaa&amp;lt;/td&amp;gt;
+		&amp;lt;td&amp;gt;bbb&amp;lt;/td&amp;gt;
+		&amp;lt;td&amp;gt;ccc&amp;lt;/td&amp;gt;
+	&amp;lt;/tr&amp;gt;
+	&amp;lt;tr&amp;gt;
+		&amp;lt;td&amp;gt;aaaa&amp;lt;/td&amp;gt;
+		&amp;lt;td&amp;gt;bbbb&amp;lt;/td&amp;gt;
+		&amp;lt;td&amp;gt;cccc&amp;lt;/td&amp;gt;
+	&amp;lt;/tr&amp;gt;
+&amp;lt;/table&amp;gt;
+&amp;lt;hr&amp;gt;
+&amp;lt;table id=&amp;quot;tbl2&amp;quot; class=&amp;quot;table2excel&amp;quot;&amp;gt;
+	&amp;lt;tr&amp;gt;
+		&amp;lt;td&amp;gt;A&amp;lt;/td&amp;gt;
+		&amp;lt;td&amp;gt;B&amp;lt;/td&amp;gt;
+		&amp;lt;td&amp;gt;C&amp;lt;/td&amp;gt;
+		&amp;lt;td&amp;gt;D&amp;lt;/td&amp;gt;
+	&amp;lt;/tr&amp;gt;
+	&amp;lt;tr&amp;gt;
+		&amp;lt;td&amp;gt;AA&amp;lt;/td&amp;gt;
+		&amp;lt;td&amp;gt;BB&amp;lt;/td&amp;gt;
+		&amp;lt;td&amp;gt;CC&amp;lt;/td&amp;gt;
+		&amp;lt;td&amp;gt;DD&amp;lt;/td&amp;gt;
+	&amp;lt;/tr&amp;gt;
+&amp;lt;/table&amp;gt;
+&amp;lt;button  onclick=&amp;quot;tablesToExcel([&#39;tbl1&#39;,&#39;tbl2&#39;], [&#39;ProductDay1&#39;,&#39;ProductDay2&#39;], &#39;TestBook.xls&#39;, &#39;Excel&#39;)&amp;quot;&amp;gt;Export to Excel&amp;lt;/button&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
-">内表相关操作</a>
+&lt;/li&gt;
+&lt;li&gt;具体调用说明：
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;tablesToExcel()&lt;/code&gt; 通过该JS方法调用&lt;/li&gt;
+&lt;li&gt;第一个参数：数组，里面是两个&lt;code&gt;table&lt;/code&gt;的id属性名&lt;/li&gt;
+&lt;li&gt;第二个参数：数组，数组长度和第一个参数长度相同，里面的元素对应excel中表sheet名&lt;/li&gt;
+&lt;li&gt;第三个参数：字符串，导出的excel文件名&lt;/li&gt;
+&lt;li&gt;第四个参数：导出的文件格式&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h5 id=&#34;参考资料&#34;&gt;参考资料&lt;/h5&gt;
+&lt;pre&gt;&lt;code&gt;http://stackoverflow.com/questions/29698796/how-to-convert-html-table-to-excel-with-multiple-sheet
+&lt;/code&gt;&lt;/pre&gt;
+">jquery2excel 导出多个excel</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/rhMcYOi1B/"" data-c="
+          &lt;h4 id=&#34;环境说明&#34;&gt;环境说明&lt;/h4&gt;
+&lt;p&gt;win10-64&lt;br&gt;
+svn-1.9&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;开始SVN图标是都显示的，结果卸载重新安装之后，SVN图标不显示了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;!-- more --&gt;
+&lt;h4 id=&#34;修复过程&#34;&gt;修复过程&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h5 id=&#34;方案1-重新安装最新版的svn&#34;&gt;方案1-重新安装最新版的SVN&lt;/h5&gt;
+&lt;p&gt;未能解决问题，SVN本来就是最新版的&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h5 id=&#34;方案2-找到svn的安装文件双击选择repair修复&#34;&gt;方案2-找到SVN的安装文件，双击选择repair（修复）&lt;/h5&gt;
+&lt;p&gt;未能解决问题&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;h5 id=&#34;方案3-修改windows注册表&#34;&gt;方案3-修改windows注册表&lt;/h5&gt;
+&lt;p&gt;Windows Explorer Shell 支持 Overlay Icon 最多15个，Windows 自身已经使用了4个，所以就只剩下了11个供我们使用。&lt;/p&gt;
+&lt;p&gt;如果你之前安装了例如Groove这样的软件，那么可能我们可利用的就更少了，轮不到Tortoise了。像这样的情况，我们可以调整Tortoise图标名称的字母顺序，来提高Tortoise的优先位置，因为Windows 内部就是安装名称的字母顺序来优先显示的。&lt;/p&gt;
+&lt;p&gt;解决的步骤&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;在 运行里 输入 regedit&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;进入 注册表 界面，&lt;br&gt;
+HKEY_LOCAL_MACHINE-&amp;gt;SOFTWARE-&amp;gt;Microsoft-&amp;gt;Windows-&amp;gt;CurrentVersion-&amp;gt;Explorer-&amp;gt;S         hellIconOverlayIdentifiers&lt;/p&gt;
+&lt;p&gt;打开后发现Tortoise 系列（1TortoiseNormal，2TortoiseAdded等）前面有好多项，Tortoise 系列排到了15名之后，难怪不显示。现在的任务就是把它们提到前面了，修改一下它们的名字就好（我是看第一项的前缀是空格，说明空格的字符排序在前面，我就加了几个空格），我改后的名字如（    TortoiseNormal，    TortoiseAdded等），然后关闭再打开注册表，发现Tortoise 系列系列图标已经排到前面了，这时SVN的图标并没有显示，靠，重启Explorer（在任务管理器中结束explorer.exe，在文件 -&amp;gt; 新建任务 -&amp;gt; 输入explorer，当然可以重启电脑，不过好sb），这样就ok了，可爱的SVN图标又出现了。&lt;/p&gt;
+&lt;p&gt;原因可能是因为我安装了好多的同步网盘（金山快盘，酷盘，everbox，百度网盘，dropbox等）占用了15 OverlayIcon，怪不得有的同步网盘的状态图标不显示呢。但是这样SVN的图标是显示了，但是肯定其他什么软件的图标又会不显示了。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;执行该方案，最终还是没能解决问题，重启电脑还是不行。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;最终方案&#34;&gt;最终方案&lt;/h4&gt;
+&lt;p&gt;按照方案3的步骤，将Tortoise名称相关的项重命名，前面加3个空格，提高svn图标的显示级别，就能完美解决问题&lt;/p&gt;
+">SVN图标不显示</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/vMTZNooRB/"" data-c="
+          &lt;h4 id=&#34;说明&#34;&gt;说明&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;环境：PHP5.6&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;配置PHPmailer发送邮件，所有流程都按照官网配置完成，当发送邮件的服务器设置为163时，邮件发送成功，换为自己的企业邮箱，邮件发送失败，提示错误：SMTP服务器连接失败。 https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;!-- more --&gt;    
+&lt;h4 id=&#34;问题描述&#34;&gt;问题描述&lt;/h4&gt;
+&lt;p&gt;配置PHPmailer发送邮件，所有流程都按照官网配置完成，当发送邮件的服务器设置为163时，邮件发送成功，换为自己的企业邮箱，邮件发送失败，&lt;br&gt;
+提示错误：&lt;code&gt;SMTP服务器连接失败。 https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;解决过程&#34;&gt;解决过程&lt;/h4&gt;
+&lt;p&gt;打开错误提供的地址：&lt;a href=&#34;https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting&#34;&gt;https://github.com/PHPMailer/PHPMailer/wiki/Troubleshooting&lt;/a&gt;，翻阅常见错误，其中有一段描述是这样的：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;h4 id=&#34;php-56-certificate-verification-failure&#34;&gt;PHP 5.6 certificate verification failure&lt;/h4&gt;
+&lt;p&gt;In a change from earlier versions, PHP 5.6 verifies certificates on SSL connections. If the SSL config of the server you are connecting to is not correct, you will get an error like this:&lt;br&gt;
+&lt;code&gt;Warning: stream_socket_enable_crypto(): SSL operation failed with code 1. OpenSSL Error messages: error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed&lt;/code&gt;&lt;br&gt;
+The correct fix for this is to replace the invalid, misconfigured or self-signed certificate with a good one. Failing that, you can allow insecure connections via the SMTPOptions property introduced in PHPMailer 5.2.10 (it&#39;s possible to do this by subclassing the SMTP class in earlier versions), though this is not recommended:&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;$mail-&amp;gt;SMTPOptions = array(
+    &#39;ssl&#39; =&amp;gt; array(
+        &#39;verify_peer&#39; =&amp;gt; false,
+        &#39;verify_peer_name&#39; =&amp;gt; false,
+        &#39;allow_self_signed&#39; =&amp;gt; true
+    )
+);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;
+&lt;p&gt;You can also change these settings globally in your php.ini, but that&#39;s a really bad idea; PHP 5.6 made this change for very good reasons.&lt;br&gt;
+Sometimes this behaviour is not quite so apparent; sometimes encryption failures may appear as the client issuing a QUIT immediately after trying to do a STARTTLS. If you see that happen, you should check the state of your certificates or verification settings.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;所以，按照文档中描述，应该是SSL验证证书的问题导致的邮件发送失败，需要将PHPmailer配置加入到PHPmailer实例化中：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$mail-&amp;gt;SMTPOptions = array(
+    &#39;ssl&#39; =&amp;gt; array(
+        &#39;verify_peer&#39; =&amp;gt; false,
+        &#39;verify_peer_name&#39; =&amp;gt; false,
+        &#39;allow_self_signed&#39; =&amp;gt; true
+    )
+);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;最终问题得到解决。&lt;/p&gt;
+">PHPmailer邮件发送失败</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/W6xLws64U/"" data-c="
+          &lt;h4 id=&#34;环境&#34;&gt;环境&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;centos6.5&lt;/li&gt;
+&lt;li&gt;redis3.2.1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;安装过程&#34;&gt;安装过程&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;$ wget http://download.redis.io/releases/redis-3.2.1.tar.gz
+$ cd redis-3.2.1
+$ make
+$ make PREFIX=/usr/local/redis install
+$ mkdir -p /usr/local/redis/etc/
+$ cp redis.conf  /usr/local/redis/etc/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;过程中其他问题说明：
+    1. 在安装的过程中，会提示：`Hint: It&#39;s a good idea to run &#39;make test&#39; ;)`。
+    2. 当运行`make test` 会提示：`You need tcl 8.5 or newer in order to run the Redis test`
+该提示是提醒需要安装tcl扩展，可以忽略，不安装，也能正常运行
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;redis启动-关闭&#34;&gt;redis启动、关闭&lt;/h4&gt;
+&lt;pre&gt;&lt;code&gt;/usr/local/redis/bin/redis-server /usr/local/redis/etc/redis.conf   //服务启动
+/usr/local/redis/bin/redis-cli shutdown     //关闭redis服务
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id=&#34;其他配置&#34;&gt;其他配置&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;默认情况下，redis不是作为后台守护进程运行的，即运行redis的时候，命令行窗口会被占用，一直显示redis服务在运行，如果需要后台运行，就要在配置文件：&lt;code&gt;/usr/local/redis/etc/redis.conf&lt;/code&gt;中，将&lt;code&gt;daemonize no&lt;/code&gt;改为&lt;code&gt;daemonize yes&lt;/code&gt;即可。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;客户端软件&#34;&gt;客户端软件：&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://redisdesktop.com/download&#34;&gt;Redis Desktop Manager&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/daivem/RedisMyAdmin&#34;&gt;RedisMyAdmin&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;参考说明&#34;&gt;参考说明&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://redis.cn/download.html&#34;&gt;redis.cn&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+">linux 安装 redis</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/FD4lDDWJD/"" data-c="
+          &lt;blockquote&gt;
+&lt;p&gt;今天想在服务器（linux）上配置一个定时任务，运行&lt;code&gt;crontab -l&lt;/code&gt;，提示&lt;code&gt;-bash: crontab: command not found&lt;/code&gt;。于是需要安装crontab服务。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;使用yum安装方式：&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$ yum install vixie-cron
+$ yum install crontabs
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;cron 是linux的内置服务，但它不自动起来，可以用以下的方法启动、关闭这个服务&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$ service crond status  //查看crontab服务状态
+$ service crond start   //手动启动crontab服务
+$ service crond stop    //手动关闭crontab服务
+$ service crond restart //重启服务
+$ service crond reload  //重新载入配置
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;常用crontab命令。具体语法也可：&lt;code&gt;vim /etc/crontab&lt;/code&gt;查看&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;crontab -l
+crontab -e
+&lt;/code&gt;&lt;/pre&gt;
+">linux crontab安装</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/UYK4PMpHT/"" data-c="
+          &lt;h4 id=&#34;说明&#34;&gt;说明&lt;/h4&gt;
+&lt;p&gt;以前一直在windows下用xampp、wampserver、phpstudy等集成环境做开发。redis扩展什么的，直接开启集成环境配置好的开关即可。&lt;br&gt;
+最近捣鼓linux，搭建了lamp环境，需要安装redis，虽然用lanmp一键安装包里面有集成的redis包，但还是想自己动手编译一下redis&lt;/p&gt;
+&lt;h4 id=&#34;环境&#34;&gt;环境&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;centos6.5&lt;/li&gt;
+&lt;li&gt;PHP7（安装路径：/usr/local/php7）&lt;/li&gt;
+&lt;li&gt;nginx&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;安装过程&#34;&gt;安装过程&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;安装扩展：&lt;a href=&#34;http://pecl.php.net/&#34;&gt;官网&lt;/a&gt;搜索redis最新安装包（目前redis3.0）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;$ wget http://pecl.php.net/get/redis-3.0.0.tgz
+$ tar zxf redis-3.0.0.tgz
+$ cd redis-3.0.0
+$ /usr/local/php7/bin/phpize
+$ ./configure -with-php-config=/usr/local/php7/bin/php-config
+$ make
+$ make install
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;php.ini中配置开启redis扩展：&lt;code&gt;extension=redis.so&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;重启&lt;pre&gt;&lt;code&gt;kill -USR2 `cat /usr/local/php7/var/run/php-fpm.pid`
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+">linux php-redis扩展安装</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" style="opacity: 0;" href="https://forkun.github.io/post/tUOZe284Q/"" data-c="
+          &lt;h4 id=&#34;概述&#34;&gt;概述&lt;/h4&gt;
+&lt;p&gt;以前开发，常用的IDE开发工具是zendstudio，从接触PHP，就一直使用该开发工具，感觉他对PHP的支持超级好，而且还支持各种eclipse的语法，一直对其爱不释手。&lt;br&gt;
+直到自己换了mac开发之后，才发现，在mac os下，zendstudio的支持并不好，特别是在全屏模式下，或者在svn提交的时候，各种现实界面问题，例如：svn提交页面显示不全等问题。&lt;br&gt;
+最终遇到了phpstorm，一个号称最好的PHP IDE编辑器，没有之一。从此后，对zendstudio的爱转移到了phpstorm上。&lt;br&gt;
+使用过程中的一些快捷键设置、常用设置等，由于习惯了sublime、notepad++等快捷键的操作习惯。因此做了一些自己的设置，过程记录下来，以备自己不时之需。&lt;/p&gt;
+&lt;h4 id=&#34;设置&#34;&gt;设置&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;** 使用星号：* 标记有改动的文件 **&lt;br&gt;
+打开设置：settings-&amp;gt;Editor-&amp;gt;Editor Tabs&lt;br&gt;
+勾选：Mark modified tabls with astrerisk即可对更改的文件进行标记&lt;br&gt;
+&lt;img src=&#34;https://forkun.github.io/post-images/mark_modify.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;** 取消文件的自动保存 **&lt;br&gt;
+打开设置：setting-&amp;gt;Appearance&amp;amp;Behavior-&amp;gt;System settings&lt;br&gt;
+取消勾选截图中的两项设置即可&lt;br&gt;
+&lt;img src=&#34;https://forkun.github.io/post-images/save_auto.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;** 显示TAB 或者 空格的效果 **&lt;br&gt;
+打开设置：settings-&amp;gt;Editor-&amp;gt;General-&amp;gt;Appearance&lt;br&gt;
+勾选截图中的选项即可&lt;br&gt;
+&lt;img src=&#34;https://forkun.github.io/post-images/show_tab.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+开启该选项后，编辑器对于代码的显示形式变为：&lt;br&gt;
+&lt;img src=&#34;/Users/forkun/webroot/dev/forkun_io/source/_posts/Phpstorm-%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE-%E6%8A%80%E5%B7%A7/show_tab_php.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;​        &lt;img src=&#34;https://forkun.github.io/post-images/show_tab_html.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;** 关闭每次启动打开上次的项目 **&lt;br&gt;
+打开设置：settings-&amp;gt;Appearance&amp;amp;Behavior-&amp;gt;System Settings&lt;br&gt;
+取消勾选：Reopen last project on startup&lt;br&gt;
+&lt;img src=&#34;https://forkun.github.io/post-images/open_last.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;** 更换主题颜色 **&lt;br&gt;
+windows：&lt;code&gt;C:\Users\用户名\.PhpStorm2016.1\config\colors&lt;/code&gt;&lt;br&gt;
+macOS：&lt;code&gt;/Users/kun/Library/Preferences/PhpStorm2016.1/colors&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;** 取消代码中对方法参数的的显示 **&lt;br&gt;
+设计成最新版的phpstorm之后，发现，针对调用方法的时候，总是显示方法的参数属性等，非常不美观&lt;br&gt;
+&lt;img src=&#34;https://forkun.github.io/post-images/show_parameter.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+打开设置：settings-&amp;gt;Editor-&amp;gt;General-&amp;gt;Appearance&lt;br&gt;
+取消勾选：Show parameter name hints即可&lt;br&gt;
+&lt;img src=&#34;https://forkun.github.io/post-images/show_parameter_hide.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;快捷键&#34;&gt;快捷键&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;** 设置快速打开文件搜索快捷键 **&lt;br&gt;
+该快捷键默认是的&lt;code&gt;shift + shift&lt;/code&gt;&lt;br&gt;
+&lt;img src=&#34;https://forkun.github.io/post-images/search_everywhere.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;** 快速显示侧边栏（项目树） **&lt;br&gt;
+在keymap中搜索project，在other中，将project的快捷键修改为alt+a&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;** 多行选择 **&lt;br&gt;
+快捷键，类似sublime中的&lt;code&gt;ctrl + d&lt;/code&gt;，在phpstorm中，该快捷键是：&lt;code&gt;ctrl + G&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;** 查找方法、变量的使用位置 **&lt;br&gt;
+&lt;code&gt;alt + F7&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;常见问题&#34;&gt;常见问题&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;** 运行是提醒，需要安装JAVA环境 **
+&lt;ul&gt;
+&lt;li&gt;下载最新版的JAVA文件&lt;/li&gt;
+&lt;li&gt;JDK文件（第一次运行的安装选择），直接选择默认安装，我选择的是：E:\Program Files\Java&lt;/li&gt;
+&lt;li&gt;在JAVA目录下（jdk同级目录）下创建jre文件，将第二次的文件路径选择指定到该目录&lt;/li&gt;
+&lt;li&gt;最终安装目录形式：&lt;br&gt;
+&lt;img src=&#34;https://forkun.github.io/post-images/install_java.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+">Phpstorm 常用设置&技巧</a>
       </div>
       
     </div>

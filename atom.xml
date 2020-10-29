@@ -1,102 +1,707 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://forkun.github.io</id>
-    <title>Gridea</title>
-    <updated>2020-10-29T05:45:42.336Z</updated>
+    <title>forkun</title>
+    <updated>2020-10-29T08:39:13.518Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://forkun.github.io"/>
     <link rel="self" href="https://forkun.github.io/atom.xml"/>
     <subtitle>温故而知新</subtitle>
     <logo>https://forkun.github.io/images/avatar.png</logo>
     <icon>https://forkun.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, Gridea</rights>
+    <rights>All rights reserved 2020, forkun</rights>
     <entry>
-        <title type="html"><![CDATA[demo002]]></title>
-        <id>https://forkun.github.io/post/uoWWArDxl/</id>
-        <link href="https://forkun.github.io/post/uoWWArDxl/">
+        <title type="html"><![CDATA[Win10 远程连接报错 credssp加密oracle修正]]></title>
+        <id>https://forkun.github.io/post/amSlchIlb/</id>
+        <link href="https://forkun.github.io/post/amSlchIlb/">
         </link>
-        <updated>2020-10-29T05:38:39.000Z</updated>
-        <content type="html"><![CDATA[<h3 id="我的测试的工具图片">我的测试的工具图片</h3>
-<h4 id="在工具中测试图片">在工具中测试图片</h4>
-<pre><code>这段是测试的代码
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>表头1</th>
-<th>表头2</th>
-<th>表头3</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>aa</td>
-<td>bb</td>
-<td>cc</td>
-</tr>
-<tr>
-<td>aaa</td>
-<td>bbb</td>
-<td>ccc</td>
-</tr>
-</tbody>
-</table>
-<figure data-type="image" tabindex="1"><img src="https://forkun.github.io/post-images/201209111121059556.jpg" alt="" loading="lazy"></figure>
-<!-- ![201209111135567915](https://forkun.github.io/post-images/201209111135567915.jpg) -->]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[demo001]]></title>
-        <id>https://forkun.github.io/post/aF3gGCSAe/</id>
-        <link href="https://forkun.github.io/post/aF3gGCSAe/">
-        </link>
-        <updated>2020-10-29T05:34:32.000Z</updated>
-        <content type="html"><![CDATA[<p>测试文章</p>
-<h4 id="测试标题">测试标题</h4>
-<h5 id="测试图片相关">测试图片相关</h5>
-<figure data-type="image" tabindex="1"><img src="https://forkun.github.io/post-images/1603949698546.jpg" alt="" loading="lazy"></figure>
+        <updated>2018-12-29T08:36:42.000Z</updated>
+        <content type="html"><![CDATA[<p>win10 有次升级之后，碰到远程连接报错，错误信息***<br>
+出现身份验证错误。要求的函数不支持。...这可能是由于CredSSP加密Oracle修正。*** 看错误，以为是自己账号密码错误，验证了好久没能解决。网上搜索到好多种解决方案。例如：修改注册表、卸载安装的补丁等等，都没能解决我遇到的问题。</p>
+<p>真实通过验证解决问题的方案，记录作为备用。</p>
+<h4 id="问题">问题</h4>
+<p>win10升级之后，远程连接的时候，报错</p>
+<figure data-type="image" tabindex="1"><img src="https://forkun.github.io/post-images/1603960645936.png" alt="" loading="lazy"></figure>
+<h4 id="解决方案">解决方案</h4>
+<p>原理是修改组策略，降低保护解决。解决方案比较粗暴，并没有从根本上解决问题，但对于本地安全要求不高的，是一种比较简单的解决方案</p>
+<ol>
+<li>
+<p><code>Win + R</code>打开运行运行窗口，输入：<code>gpedit.msc</code>打开本地组策略编辑器<br>
+<img src="https://forkun.github.io/post-images/1603960653469.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>双击***加密Oracle修正***，将保护级别改为：“易受攻击”<br>
+<img src="https://forkun.github.io/post-images/1603960659574.png" alt="" loading="lazy"></p>
+</li>
+</ol>
 ]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[内表相关操作]]></title>
-        <id>https://forkun.github.io/post/nei-biao-xiang-guan-cao-zuo/</id>
-        <link href="https://forkun.github.io/post/nei-biao-xiang-guan-cao-zuo/">
+        <title type="html"><![CDATA[Docker + Hexo 配置静态博客]]></title>
+        <id>https://forkun.github.io/post/5UtJXApw2/</id>
+        <link href="https://forkun.github.io/post/5UtJXApw2/">
         </link>
-        <updated>2020-10-29T03:22:06.000Z</updated>
-        <content type="html"><![CDATA[<h3 id="获取内表长度">获取内表长度</h3>
-<p>分2步操作获取内表长度</p>
+        <updated>2018-12-28T08:31:39.000Z</updated>
+        <summary type="html"><![CDATA[<h5 id="说明">说明</h5>
+<p>最近在捣鼓docker，被他的独立运行应用的容器所迷恋，导致现在不管运行什么服务，第一印象都是想在docker中运行。</p>
+<p>之前在本地安装过hexo的，运行没问题，现在想把hexo， 单独安装在docker中，通过docker容器，来管理我的博客。</p>
+<p>大概的思路是：</p>
+<ol>
+<li>下载一个nodejs的镜像</li>
+<li>安装hexo</li>
+</ol>
+]]></summary>
+        <content type="html"><![CDATA[<h5 id="说明">说明</h5>
+<p>最近在捣鼓docker，被他的独立运行应用的容器所迷恋，导致现在不管运行什么服务，第一印象都是想在docker中运行。</p>
+<p>之前在本地安装过hexo的，运行没问题，现在想把hexo， 单独安装在docker中，通过docker容器，来管理我的博客。</p>
+<p>大概的思路是：</p>
+<ol>
+<li>下载一个nodejs的镜像</li>
+<li>安装hexo</li>
+</ol>
+<!-- more -->
+<h5 id="问题">问题</h5>
+<p>由于之前自己的hexo博客，托管到git库了。所以这次的改动，从git库下载下来之后，直接在容器中运行的时候，遇到了兼容性问题（好久没有用过写博客了，中间断了2年，导致好多库老旧，没法使用）。</p>
+<p>实在找不到问题，就重新创建了一个目录，然后重新<code>hexo init</code>初始化项目。再将之前博客文件，拷贝到新的项目中，运行。</p>
+<h5 id="过程">过程</h5>
+<h6 id="搭建hexo环境">搭建hexo环境</h6>
+<ol>
+<li>
+<p>下载nodejs的官方镜像，选择alipine版本（alipine非常小，才4M左右）</p>
+<p><code>docker pull node:10.15-alpine</code></p>
+</li>
+<li>
+<p>创建&amp;运行docker容器</p>
+<pre><code>docker run -dit -p 228:22 -p 4001:4000 --name blog_hexo -v D:/semir/www/dev/:/mnt --network my_network --ip 172.18.0.8 node:10.15-alpine /bin/sh
+</code></pre>
+<p>过程中，将自己的博客的根目录，挂在到容器中</p>
+</li>
+<li>
+<p>重新创建目录&amp;初始化博客</p>
+<pre><code>&gt; mkdir forkun_io
+&gt; cd forkun_io
+&gt; hexo init
+# 将之前的markdown文件，拷贝到项目目录：/source/_posts
+&gt; hexo clean	# 清除之前的public文件
+&gt; hexo generate
+&gt; hexo server
+</code></pre>
+</li>
+</ol>
+<h6 id="配置next主题">配置Next主题</h6>
+<ol>
+<li>下载<a href="http://theme-next.iissnan.com/">Next</a>主题文件（<a href="https://github.com/iissnan/hexo-theme-next">github</a>）</li>
+<li>将文件目录，拷贝到theme，然后项目配置文件中，指定next主题即可。</li>
+</ol>
+<h5 id="我的配置">我的配置</h5>
+<ol>
+<li>
+<p>项目启用next主题</p>
+<blockquote>
+<p>在项目配置文件（/_config.yml）theme 选项值，改为：next</p>
+</blockquote>
+</li>
+<li>
+<p>开启资源文件夹自动生成功能</p>
+<blockquote>
+<p>在项目配置文件（/_config.yml）post_asset_folder 选项值，改为：true</p>
+<p>该功能，主要是为了在文章中，引入图片的功能。开启该功能，在每次执行hexo new 创建md文件的时候，会同步创建一个该md文件名同名的文件夹，然后可以将文章中需要的图片，存入到该文件夹，再在文章中直接引用。</p>
+</blockquote>
+<p>开启该功能，需要同步安装hexo的扩展插件，才能在文章中使用：</p>
+<pre><code>![音频默认控件样式](h5-audio-JS控制音乐开关/audio_demo.png)
+</code></pre>
+<p>在项目根目录执行：</p>
+<pre><code>npm install hexo-asset-image --save
+</code></pre>
+</li>
+<li>
+<p>启用next主题的本地搜索功能：Local Search</p>
+<p><code>npm install hexo-generator-searchdb --save</code></p>
+<p>修改项目配置文件（/_config.yml），在任意位置添加开启搜索</p>
+<pre><code># search
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+</code></pre>
+<p>修改主题配置文件（/theme/next/_config.yml），开启本地搜索</p>
+<pre><code># Local search
+local_search:
+  enable: true
+</code></pre>
+</li>
+<li>
+<p>开启tags&amp;categories 聚合页</p>
+<p>创建tags和categories聚合页的index.md</p>
+<pre><code>hexo new page tags
+hexo new page categories
+</code></pre>
+<p>执行完该命令，会在/source/categories、/source/tags两个目录下创建index.md文件，该页面就是标签和分类的聚合页，然后需要做些修改，才能在<code>hexo generate</code>的时候，自动抓取页面中的标签和分类。修改各自的index.md文件</p>
+<pre><code># categories
+---
+title: categories
+date: 2018-12-28 08:30:32
+type: categories
+comments: false
+---
+
+# tags
+---
+title: tags
+date: 2018-12-28 08:30:19
+type: tags
+comments: false
+---
+</code></pre>
+</li>
+<li>
+<p>设置next主题的语法高亮</p>
+<p>修改主题配置文件（/theme/next/_config.yml）文件，开启语法高亮的主题</p>
+<p><code>highlight_theme: normal</code></p>
+<p>修改项目配置文件（/_config.yml）文件，开启自动识别高亮关键词</p>
+<p><code>highlight &gt; auto_detect true</code></p>
+</li>
+</ol>
+<h5 id="常见问题">常见问题</h5>
+<h6 id="hexo-部署报错">hexo 部署报错</h6>
+<p>错误信息：<code>ERROR Deployer not found: git</code></p>
+<p>该错误的原因是hexo的git扩展未安装，执行：</p>
+<p><code>npm install --save hexo-deployer-git</code></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Laravel Eloquent自动将空字符串解析为null报错]]></title>
+        <id>https://forkun.github.io/post/SKH_uC8j2/</id>
+        <link href="https://forkun.github.io/post/SKH_uC8j2/">
+        </link>
+        <updated>2018-12-10T08:32:57.000Z</updated>
+        <summary type="html"><![CDATA[<p>使用laravel eloquent模型，进行数据的添加、编辑的时候，发现有些空值（&quot;&quot;）被转为了<code>null</code>，而数据库中，字段的设置是：<code>not null default ''</code> 这样就遇到了问题了。数据库中是<code>not null</code>，而laravel却自动将在表单中没有录入的空值自动转化为<code>null</code>，导致数据插入失败，数据库报错：</p>
+<pre><code>SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'descr' cannot be null 
+(SQL: update `arc_cate` set `descr` = , `updated_at` = 2018-12-29 13:35:59 where `id` = 13)
+</code></pre>
+]]></summary>
+        <content type="html"><![CDATA[<p>使用laravel eloquent模型，进行数据的添加、编辑的时候，发现有些空值（&quot;&quot;）被转为了<code>null</code>，而数据库中，字段的设置是：<code>not null default ''</code> 这样就遇到了问题了。数据库中是<code>not null</code>，而laravel却自动将在表单中没有录入的空值自动转化为<code>null</code>，导致数据插入失败，数据库报错：</p>
+<pre><code>SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'descr' cannot be null 
+(SQL: update `arc_cate` set `descr` = , `updated_at` = 2018-12-29 13:35:59 where `id` = 13)
+</code></pre>
+<!-- more -->
+<h5 id="解决方案">解决方案</h5>
+<p>理论上来说，要针对所有的输入，都要有个验证和判断，在遇到表单的输入空值的时候，需要为其设置一个默认的值。这种方案，个人认为是比较合理的，也是比较符合规范的，能保证对所有的输入都有个控制的。</p>
+<p>另一种访问，是在laravel框架做改动了，在网上查找到说：<code>laravel 全局中间件下ConvertEmptyStringsToNull这个中间件，默认把空字符串转换为null</code>。所以想着能控制这里，不要讲空值转null，就可以了。但是既然laravel官方将空值转为了null，就一定有其道理（虽然我不知）。</p>
+<p>所以个人还是比较推崇第一种解决方案的。</p>
+<h6 id="关闭laravel空值转null的方案">关闭laravel空值转null的方案</h6>
+<p>改动文件：<code>/app/Http/Kernel.php</code></p>
+<p>将公共的中间件<code>ConvertEmptyStringsToNull</code>注释掉</p>
+<pre><code>protected $middleware = [
+    \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
+    \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
+    \App\Http\Middleware\TrimStrings::class,
+#	\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
+    \App\Http\Middleware\TrustProxies::class,
+];
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Nginx 常用命令]]></title>
+        <id>https://forkun.github.io/post/t5LByGVMQ/</id>
+        <link href="https://forkun.github.io/post/t5LByGVMQ/">
+        </link>
+        <updated>2018-10-26T08:35:22.000Z</updated>
+        <summary type="html"><![CDATA[<p>Nginx 常用命令汇总，留作自用。</p>
+<p>Nignx常用的命令，在其安装目录的sbin目录下面。如果有将这些命令，加入到系统变量，或者已经拷贝到用户可执行的命令目录。直接执行常用的命令即可，否则最好是进入nginx安装目录的sbin目录执行。</p>
+<p>简单记录nginx常用的启动、停止等：<code>nginx {start|restart|stop}</code></p>
+]]></summary>
+        <content type="html"><![CDATA[<p>Nginx 常用命令汇总，留作自用。</p>
+<p>Nignx常用的命令，在其安装目录的sbin目录下面。如果有将这些命令，加入到系统变量，或者已经拷贝到用户可执行的命令目录。直接执行常用的命令即可，否则最好是进入nginx安装目录的sbin目录执行。</p>
+<p>简单记录nginx常用的启动、停止等：<code>nginx {start|restart|stop}</code></p>
+<!-- more -->
+<h5 id="具体命令">具体命令</h5>
+<h6 id="nginx-t"><code>nginx -t</code></h6>
+<p>监测ng的配置文件，例如域名配置等，每次启动或者重启ng之前，最好执行该命令，监测配置文件的正确性，已确保服务真正的能重启的来。否则可能服务无法重启</p>
+<h6 id="nginx-s-reload"><code>nginx -s reload</code></h6>
+<p>平滑重启ng服务，中间ng服务并不会停止。在reload的过程中，会重新加载配置文件使之生效，然后启动ng服务。</p>
+<h6 id="nginx-s-quit"><code>nginx -s quit</code></h6>
+<p>优雅停止nginx，有连接时会等连接请求完成再杀死worker进程</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[PHP写大文件（数据库正常，PHP内存溢出）]]></title>
+        <id>https://forkun.github.io/post/JVzOGWiGz/</id>
+        <link href="https://forkun.github.io/post/JVzOGWiGz/">
+        </link>
+        <updated>2017-05-24T08:30:45.000Z</updated>
+        <summary type="html"><![CDATA[<h4 id="问题描述">问题描述</h4>
+<p>通过PHP，执行了一段针对MYSQL查询，然后件数据查询的结果写入到一个csv文件中，由于数据量非常大，通过WEB访问会存在超时的问题，所以程序执行是命令行下执行的。</p>
+<p>在执行了很久之后，通过MYSQL控制台：<code>show processlist;</code>命令，发现刚才执行的SQL已经完成了，但是csv文件，并没有生成。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h4 id="问题描述">问题描述</h4>
+<p>通过PHP，执行了一段针对MYSQL查询，然后件数据查询的结果写入到一个csv文件中，由于数据量非常大，通过WEB访问会存在超时的问题，所以程序执行是命令行下执行的。</p>
+<p>在执行了很久之后，通过MYSQL控制台：<code>show processlist;</code>命令，发现刚才执行的SQL已经完成了，但是csv文件，并没有生成。</p>
+<!-- more -->
+<h4 id="问题排查">问题排查</h4>
+<p>由于程序对容错性处理不是很好，所以执行没有看到任何的错误记录，只能通过PHP或者MYSQL的错误日志来排错</p>
+<ol>
+<li>
+<p>通过查看MYSQL错误日志文件： hostname.err文件，并没有找到任务的错误记录</p>
+</li>
+<li>
+<p>发现PHP并没有记录PHP的执行日志，所以需要在php.ini中开启PHP的日志记录<br>
+<code>error_log = /usr/local/php/var/log/php.log</code></p>
+</li>
+<li>
+<p>再次执行刚才的查询，在PHP的错误日志中发现：</p>
+</li>
+</ol>
+<pre><code>PHP Fatal error:  Allowed memory size of 23907532800 bytes exhausted (tried to allocate 88 bytes) in /path/1.php on line 2
+</code></pre>
+<p>错误提示PHP内存溢出。</p>
+<p>最终得到结论：是由于MYSQL返回的数据太大，超出了PHP最大内存限制，导致程序</p>
+<h4 id="尝试方案">尝试方案</h4>
+<p>既然是PHP内存溢出，那就考虑在PHP端如果优化处理</p>
 <ul>
-<li>订单存放长度的整型变量</li>
-<li>获取长度存入到整型变量</li>
-</ul>
-<pre><code>DATA: lv_cnt_res TYPE i.
-
-DESCRIBE TABLE &lt;itab_name&gt; LINES lv_cnt_res .
+<li>
+<p>*** 程序是Thinkphp开发的，执行SQL调用的是Thinkphp自带的query方法，通过追踪源码发现 ***</p>
+<pre><code>private function getResult()
+{
+    //返回数据集
+    $result        = $this-&gt;PDOStatement-&gt;fetchAll(PDO::FETCH_ASSOC);
+    $this-&gt;numRows = count($result);
+    return $result;
+}
 </code></pre>
-<h3 id="内表更新without-loop">内表更新（without loop）</h3>
-<p>思路：</p>
+<p>query最终调用了该方法，fetchAll查询的资源。一下子将所有的结果集赋给了$result变量。<br>
+这种方式，显然有问题，因此优化该方法，使自己的query请求调用原生PDO，通过while，每次处理一行结果集写入到csv文件</p>
+<pre><code>$res_source = $link-&gt;query($sql_info['sql']);
+$fp = fopen($csv_file, 'a');
+while ($row = $res_source-&gt;fetch(PDO::FETCH_ASSOC)) {
+    fputcsv($fp, $row);
+    $i++;
+}
+</code></pre>
+<p>但是最终得到的结果，还是PHP内存溢出，没有成功。结果集让然是全部缓存到了内存中。</p>
+</li>
+<li>
+<p>*** 通过控制PHP对MYSQL的数据读取，每次逐行读取，而不是一次全发返回结果集。***<br>
+按照这个思路，通过网上查找资料，找到了一些说明资料，描述：</p>
+<blockquote>
+<p>这个问题在PHP的官方网站上叫缓冲查询和非缓冲查询(Buffered and Unbuffered queries)。PHP的查询缺省模式是缓冲模式。也就是说，查询数据结果会一次全部提取到内存里供PHP程序处理。这样给了PHP程序额外的功能，比如说，计算行数，将指针指向某一行等。更重要的是程序可以对数据集反复进行二次查询和过滤等操作。但这种缓冲查询模式的缺陷就是消耗内存，也就是用空间换速度。<br>
+相对的，另外一种PHP查询模式是非缓冲查询，数据库服务器会一条一条的返回数据，而不是一次全部返回，这样的结果就是PHP程序消耗较少的内存，但却增加了数据库服务器的压力，因为数据库会一直等待PHP来取数据，一直到数据全部取完。</p>
+</blockquote>
+<p>最终找到了一个关于PHP操作MYSQL的原生函数：<code>mysql_unbuffered_query</code>，PHP官方手册这样介绍该函数：</p>
+<blockquote>
+<p>mysql_unbuffered_query — 向 MySQL 发送一条 SQL 查询，并不获取和缓存结果的行<br>
+*** 说明 ***<br>
+resource mysql_unbuffered_query ( string $query [, resource $link_identifier ] )<br>
+mysql_unbuffered_query() 向 MySQL 发送一条 SQL 查询 query，但不像 mysql_query() 那样自动获取并缓存结果集。<br>
+一方面，这在处理很大的结果集时会节省可观的内存。另一方面，可以在获取第一行后立即对结果集进行操作，而不用等到整个 SQL 语句都执行完毕。<br>
+当使用多个数据库连接时，必须指定可选参数 link_identifier。<br>
+*** Note:  ***<br>
+mysql_unbuffered_query() 的好处是有代价的：在 mysql_unbuffered_query() 返回的结果集之上不能使用 mysql_num_rows() 和 mysql_data_seek()。此外在向 MySQL 发送一条新的 SQL 查询之前，必须提取掉所有未缓存的 SQL 查询所产生的结果行。</p>
+</blockquote>
+<p>所以我们在读取大量数据的时候，可以使用mysql_unbuffered_query()来替代mysql_query()。设置为非缓冲查询，设置方法：<br>
+修改PDO实例选项：</p>
+<pre><code>&lt;?php
+/*
+ * Mysqli设置格式
+ * 通过对query方法设置：MYSQLI_USE_RESULT（只是读取了结果集的元信息）
+ * 另一种默认的方法是：MYSQLI_STORE_RESULT（把结果集从mysqlServer读到客户端）
+ */
+$mysqli = new mysqli($db_hosts, $db_user, $db_pwd, $db_name); 
+$uresult = $mysqli-&gt;query(&quot;select * from table_name&quot;, MYSQLI_USE_RESULT); 
+
+/*
+ * PDO设置格式
+ * 通过对setAttribute，设置非缓冲查询
+ */
+$pdo = new PDO($db_dns, $db_user, $db_pwd);
+$pdo-&gt;setAttribute(PDO::MYSQL_ATTR_USE_BUFFERED_QUERY, false);
+
+/*
+ * mysql设置格式
+ * 通过调用mysql_unbuffered_query方法，来替换query方法
+ */
+$connect = mysql_connect($db_hosts, $db_user, $db_pwd); 
+$db = mysql_select_db($db_name); 
+$result = mysql_unbuffered_query(&quot;select * from table_name&quot;); 
+
+</code></pre>
+<p>最终通过该方法，解决了PHP读大数据内存溢出，*** 最终成功写入CSV的文件的大小：388G，写入CSV文件行数：9亿多行 ***。</p>
+<p>​</p>
+</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Vagrant 搭建 Linux]]></title>
+        <id>https://forkun.github.io/post/819jbSRPm/</id>
+        <link href="https://forkun.github.io/post/819jbSRPm/">
+        </link>
+        <updated>2017-05-18T08:28:58.000Z</updated>
+        <summary type="html"><![CDATA[<h4 id="概述">概述</h4>
+<p>在windows做开发的时候，发布上线的时候，总是由于运行环境的差异，而在线上发现一些不必要的问题，因此需要将本地的开发环境与线上运行环境一致，就可以避免这些问题。<br>
+在此技术上，考虑在window机器上搭建Linux环境，最常见的就是使用虚拟机。我使用的是vagrant来管理我的虚拟机，下面记录我搭建vagrant + vbox + centos的搭建过程。<br>
+该过程同样适用于其他的linux版本。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h4 id="概述">概述</h4>
+<p>在windows做开发的时候，发布上线的时候，总是由于运行环境的差异，而在线上发现一些不必要的问题，因此需要将本地的开发环境与线上运行环境一致，就可以避免这些问题。<br>
+在此技术上，考虑在window机器上搭建Linux环境，最常见的就是使用虚拟机。我使用的是vagrant来管理我的虚拟机，下面记录我搭建vagrant + vbox + centos的搭建过程。<br>
+该过程同样适用于其他的linux版本。</p>
+<!-- more -->
+<h4 id="安装软件">安装软件</h4>
 <ul>
-<li>定义与内表相同的一个结构，在结构中赋值需要更新的内容。</li>
-<li>将结构modify到内表，并指定要modify的字段</li>
+<li>
+<p>**** 下载安装最新版本的<a href="https://www.vagrantup.com/downloads.html">vagrant</a> ****<br>
+下载页面中，有各种版本下的软件下载，特别需要注意的是，下载的时候会没有下载进度，估计是被墙了，最好能翻墙下载该软件。</p>
+</li>
+<li>
+<p>**** 下载安装最新版本的<a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a> ****<br>
+这个下载起来就比较快了，直接安装相应版本的vbox即可。<br>
+其实用vmware也可以来替代vbox的，但是个人感觉，vmware教vbox耗性能。自己试过，在同一个电脑上，安装vbox、vmware，vbox要比vmware快好多。</p>
+</li>
+<li>
+<p>**** 安装好vagrant之后，软件会将<code>vagrant</code>命令，自动注册到系统变量，所以可以在命令行下直接执行<code>vagrant --version</code>命令测试是否安装成功。****<br>
+截至目前位置，我们只是安装了容器软件，真正的linux系统并没有下载。通过vagrant来管理vbox的镜像包的话，有vagrant专用的box，自己下载的iso镜像文件，并不能用的。</p>
+</li>
+<li>
+<p>**** 下载需要的版本的镜像包<a href="http://www.vagrantbox.es/">box</a> ****<br>
+其实也可以不用手动下载镜像包，因为在<code>vagrant首先创建一个文件夹 box add</code>的时候，也可以指定box包，直接在远程下载的。但是这个在国内的下载速度，也是非常慢的，所以，最好提前下载好，在<code>vagrant add box</code>的时候，直接指定包的位置即可。</p>
+</li>
 </ul>
-<pre><code>DATA: gs_head type ty_head .
-gs_head-chkbox = 'X' .
+<h4 id="安装linux系统">安装Linux系统</h4>
+<ul>
+<li>
+<p>**** 设定vbox默认虚拟电脑位置 ****<br>
+如果不设置虚拟电脑目录的话，系统安装linux的时候，会将linux文件，安装到vbox默认的windows系统盘。没必要无故占用系统盘空间。因此这里提前约束好。<br>
+<img src="https://forkun.github.io/post-images/1603960203377.png" alt="" loading="lazy"></p>
+</li>
+<li>
+<p>**** 创建vagrant的配置文件路径，该路径存放配置文件：Vagrantfile ****<br>
+该路径，是vbox内控制linux配置的文件：设置网络、设置共享文件夹、设置linux内存等。并且默认，该目录会被自动挂在到虚拟机内的linux中</p>
+</li>
+<li>
+<p>**** 添加、初始化、运行 ****<br>
+进入上一步骤创建的路径目录。<br>
+在目录内使用：<code>vagrant box add linux_name box_path</code>命令，添加box包到vagrant。linux_name是虚拟机内部linux系统名，是唯一标识vagrant中一个虚拟机的名字。box_path设置为刚才下载的box文件的全路径。<br>
+在目录内使用：<code>vagrant init</code>命令，生成Vagrantfile配置文件。<br>
+执行：<code>vagrant up</code>命令，初次安装。安装成功后，该命令启动系统。<br>
+截止到目前为止，虚拟机中的系统已经安装完成。</p>
+</li>
+</ul>
+<h4 id="常用的配置">常用的配置</h4>
+<ul>
+<li>
+<p>**** 网络设置 ****<br>
+关于网络设置，有3中设置：</p>
+<ol>
+<li>
+<p>forwarded_port-端口映射：该模式是通过端口映射，来判别是访问主机，还是虚拟机。例如可以设置所有通过8989端口的访问，都映射到虚拟机内部的80端口：<code>config.vm.forwarded_port 80, 8989</code>。该方式优点是简单，容易设置。容易实现外网访问虚拟机。但是对于有多个端口需要映射配置的时候，就很吃力了。不可能每次增加一个端口，就增加一个映射关系的。</p>
+</li>
+<li>
+<p>private_network-私有网路：我用的最多的也是这种网络，他只允许主机和虚拟机互通。同网络的其他主机，不能访问该虚拟机。<code>config.vm.network &quot;private_network&quot;, ip: &quot;192.168.33.188&quot;</code>，该配置开启的时候，在<code>vagrant reload</code>配置文件的时候，会在本机创建一个host-only的网络。其实这种方式就是虚拟机的<code>host-only</code>模式。</p>
+</li>
+<li>
+<p>public_network-公用网络：和虚拟机一样，也是在内网的一个真实存在的机器，和其他主机可以相互访问。需要占用一个独立的IP：<code>config.vm.network &quot;public_network&quot;, ip: &quot;192.168.1.120&quot;</code></p>
+</li>
+</ol>
+</li>
+<li>
+<p>**** SSH连接-登录-账号-启用root ****<br>
+默认的SSH登录的账号和密码是：<code>vagrant vagrant</code>。我们可以通过xshell客户端，通过vagrant账号进入系统然后：<code>sudo paswd root</code>命令，设置一个root账号的密码。<br>
+然后退出xshell，直接用root账号连接即可。</p>
+</li>
+<li>
+<p>**** 共享文件夹的设置 ****<br>
+系统默认会将刚才创建的配置文件的目录挂载到虚拟机内部的：/vagrant目录。常用的配置选项有：</p>
+<ol>
+<li>
+<p>create(boolean)--可选：默认为false，若配置为true，挂载到虚拟机上的目录若不存在则自动创建。</p>
+</li>
+<li>
+<p>disabled(boolean)--可选：默认为false，若为true,则禁用该项挂载</p>
+</li>
+<li>
+<p>owner(string):'www'--可选：虚拟机系统下文件所有者(确保系统下有该用户，否则会报错)，默认为vagrant</p>
+</li>
+<li>
+<p>group(string):'www'--可选：虚拟机系统下文件所有组( (确保系统下有该用户组，否则会报错)，默认为vagrant</p>
+</li>
+<li>
+<p>mount_options(array):[&quot;dmode=775&quot;,&quot;fmode=664&quot;]--可选：dmode配置目录权限，fmode配置文件权限  //默认权限777</p>
+</li>
+<li>
+<p>type(string):--可选：指定文件共享方式，例如：'nfs'，vagrant默认根据系统环境选择最佳的文件共享方式</p>
+</li>
+</ol>
+<p>例如：需要如下配置：取消自动挂载的vagrant目录，将自动挂载的文件用户、用户组指定为：root，挂载的目录的权限设置为：775，可以做如下配置：</p>
+</li>
+</ul>
+<pre><code>config.vm.synced_folder &quot;e:/www&quot;, &quot;/mnt/www&quot;, owner: &quot;root&quot;, group: &quot;root&quot;, mount_options: [&quot;dmode=775&quot;,&quot;fmode=664&quot;]
+config.vm.synced_folder &quot;.&quot;, &quot;/vagrant&quot;, disabled:true
+</code></pre>
+<ul>
+<li>**** 设置虚拟机内存 ****<br>
+将下面注释的这行打开，并且做如下设置：<pre><code>config.vm.provider &quot;virtualbox&quot; do |vb|
+	#vb.gui = true #这个选项可以不开启，控制vagrant启动的时候，是否启动vbox客户端。
+	vb.memory = &quot;4096&quot;	#占用内存大小。
+vb.memory = &quot;4096&quot;
+</code></pre>
+</li>
+</ul>
+<h4 id="常用命令">常用命令</h4>
+<ul>
+<li>vagrant box add <name>新增box包</li>
+<li>vagrant box list 列出当前vagrant中的包</li>
+<li>vagrant box remove <name>删除vagrant中的包</li>
+<li>vagrant init 初始化配置文件</li>
+<li>vagrant up 启动系统</li>
+<li>vagrant reload 重启系统，会重新载入Vagrantfile配置文件，一般有配置文件更改的时候，执行该命令。</li>
+<li>vagrant halt 关闭系统</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Mysql 常用语句技巧汇总]]></title>
+        <id>https://forkun.github.io/post/Q7QKXwcA0/</id>
+        <link href="https://forkun.github.io/post/Q7QKXwcA0/">
+        </link>
+        <updated>2017-04-27T08:18:21.000Z</updated>
+        <content type="html"><![CDATA[<h4 id="概述">概述</h4>
+<p>内容是在平时遇到的一些常用的技巧或者不常用但是很有用的一些语句等，给自己留作备份记录，以便后期使用的方便。<br>
+主要是自己的记性并不怎么好，所以好记性不如烂笔头。</p>
+<h4 id="常用语句">常用语句</h4>
+<ul>
+<li>update join<br>
+语句是用来联表执行update语句的使用，常用来将A表的字段，更新为B表的某一个字段等，前提是A表与B表必须要有关联的字段（条件）。<br>
+示例：</li>
+</ul>
+<pre><code>update table_1 tb1 
+left join table_2 tb2 on tb1.field1 = tb2.field1 
+set tb1.field2 = tb2.field2;
+</code></pre>
+<h4 id="常见问题技巧">常见问题&amp;技巧</h4>
+<ul>
+<li>my.cnf -&gt; sql_mode<br>
+该参数，定义了Mysql应该支持的SQL语法、数据校验等。曾经遇到两个问题，需要修改sql_mode的配置：
+<ol>
+<li>
+<p>NO_ZERO_IN_DATE：数据导入的数据库，日期类型的默认值：<code>0000-00-00 00:00:00</code>的时候，遇到了问题，提示说一个不能被支持的日期的默认格式，这种情况，就是在sql_mode中定义了：<code>NO_ZERO_IN_DATE</code>,需要将该配置关闭，才能将日期默认值设置为0。</p>
+</li>
+<li>
+<p>ANSI_QUOTES：导出的数据表结构的字段，是被双引号(&quot;&quot;)引用的，而不是被Mysql的识别符(``)引用的，导致运行导出的SQL无法运行。该问题是因为在sql_mode中，开启了：<code>ANSI_QUOTES</code>配置，该配置是控制能否用双引号(&quot;&quot;)引用字符的。关闭该配置，既可以支持正常的SQL语法了。</p>
+</li>
+</ol>
+</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Linux 定时清理日志文件，磁盘占满，MYSQL无法启动]]></title>
+        <id>https://forkun.github.io/post/WaT4ojcly/</id>
+        <link href="https://forkun.github.io/post/WaT4ojcly/">
+        </link>
+        <updated>2017-04-19T08:17:22.000Z</updated>
+        <summary type="html"><![CDATA[<h4 id="问题描述">问题描述</h4>
+<p>服务器的磁盘空间比较小，大概20G左右，突然有一天发现<code>mysql</code>查询无法执行了。</p>
+<p>在<code>navicat</code>中，刷新数据表的时候，<br>
+提醒错误：<code>Got error 28 from storage engine</code>。<br>
+<code>SQL</code>语句也无法执行。</p>
+<p>然后我就很悲催的重启了<code>mysql</code>服务。<br>
+这下完了，再也启动不了<code>mysql</code>服务了。<br>
+因为最终排查到错误信息说是磁盘空间占用满了，<br>
+通过<code>df -h</code>命令，查看，发现磁盘空间确实占用了100%，<br>
+所以<code>mysql</code>不可能起的的起来的。</p>
+<p>现在只能通过腾出一些服务器的磁盘空间，才能将<code>mysql</code>启动的。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h4 id="问题描述">问题描述</h4>
+<p>服务器的磁盘空间比较小，大概20G左右，突然有一天发现<code>mysql</code>查询无法执行了。</p>
+<p>在<code>navicat</code>中，刷新数据表的时候，<br>
+提醒错误：<code>Got error 28 from storage engine</code>。<br>
+<code>SQL</code>语句也无法执行。</p>
+<p>然后我就很悲催的重启了<code>mysql</code>服务。<br>
+这下完了，再也启动不了<code>mysql</code>服务了。<br>
+因为最终排查到错误信息说是磁盘空间占用满了，<br>
+通过<code>df -h</code>命令，查看，发现磁盘空间确实占用了100%，<br>
+所以<code>mysql</code>不可能起的的起来的。</p>
+<p>现在只能通过腾出一些服务器的磁盘空间，才能将<code>mysql</code>启动的。</p>
+<!-- more -->
+<h4 id="思路">思路</h4>
+<p>服务器的空间本来就不大的，只能清除一些不常用的文件，才可以</p>
+<ol>
+<li>程序运行过程中，产生的一些日志文件</li>
+<li><code>mysql</code>产生的<code>mysql-bin.xxxxxx</code>文件（因为发现这个文件比较大，他自己一个文件都有2~3个G的，因此考虑将该文件删除）</li>
+</ol>
+<h4 id="分析">分析</h4>
+<p>先对<code>mysql-bin.xxxxxx</code>文件进行分析，该文件是<code>mysql</code>的操作日志文件。<br>
+例如UPDATE一个表，或者DELETE一些数据，即使该语句没有匹配的数据，这个命令也会存储到日志文件中，还包括每个语句执行的时间，也会记录进去的。<br>
+该文件的主要作用，是数据恢复、主从同步数据等。<br>
+<strong><strong>如果<code>msyql</code>服务器在正常运行，能进入的话，直接进入<code>mysql</code>的控制台，执行命令：<code>reset master;</code>，就会将<code>mysql-bin.xxxxxx</code>文件清除了</strong></strong></p>
+<p>但是<code>msyql</code>服务已经无法启动了，因此只能考虑第1条，考虑定时清空删除一些手动记录的日志文件了。但是手动删除不是长久之计，因此要定时删除这些文件。</p>
+<ol>
+<li>查找日志目录下，超过7天未有修改记录的日志文件，执行<code>rm</code>删除。</li>
+<li>每天定时<code>crontab</code>执行该命令。</li>
+</ol>
+<p>查找目录下，超过7天的文件，并且执行删除操作命令：<br>
+删除文件：<code>find /path -mtime +7 -type f -name '*.log' | xargs rm -f</code><br>
+删除目录：<code>find /path -mtime +7 -type d | xargs rm -rf</code>（删除path目录下，创建时间超过7天的文件夹）</p>
+<ol>
+<li><code>path</code>是需要查找日志文件的目录。</li>
+<li><code>-mtime +7</code>是指修改时间距离当前时间超过7天的文件</li>
+<li><code>-type</code>指类型是文件</li>
+<li><code>-name</code>文件名字，参数可省略</li>
+<li><code>xargs</code>是同步执行命令</li>
+</ol>
+<p>最终，可配置定时任务：<br>
+<code>0 2 * * * find path -mtime +7 -type f -name '*.log' |xargs rm -f &gt;&gt; /dev/null</code></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[SVN自动更新 Linux]]></title>
+        <id>https://forkun.github.io/post/yk9hFpPKY/</id>
+        <link href="https://forkun.github.io/post/yk9hFpPKY/">
+        </link>
+        <updated>2017-04-07T07:30:09.000Z</updated>
+        <summary type="html"><![CDATA[<h4 id="概述">概述</h4>
+<p>环境：Linux<br>
+用<code>SVN</code>版本库协作开发，每次本地开发之后，如果不想手动在服务器执行更新命令的话，可以设置服务器的自动更新。<br>
+自动更新的话，个人理解为分服务器主动更新（<code>svn up</code>），和服务器被动更新。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h4 id="概述">概述</h4>
+<p>环境：Linux<br>
+用<code>SVN</code>版本库协作开发，每次本地开发之后，如果不想手动在服务器执行更新命令的话，可以设置服务器的自动更新。<br>
+自动更新的话，个人理解为分服务器主动更新（<code>svn up</code>），和服务器被动更新。</p>
+<!-- more -->
+<h4 id="分析">分析</h4>
+<ul>
+<li>主动更新<br>
+这种方式，服务器，自主执行<code>svn update</code>操作更新。<br>
+手动执行该操作，或者通过定时任务<code>crontab</code>定时执行<code>svn up</code></li>
+<li>被动更新<br>
+这种方式，是通过<code>SVN</code>版本库所在的服务器，通过钩子(<code>hooks</code>)，在版本库触发某个事件的时候，自动更新的<code>WEB</code>服务器。不需要执行定时任务触发。</li>
+</ul>
+<h4 id="实现">实现</h4>
+<h6 id="钩子自动更新">钩子自动更新</h6>
+<p>首先声明，该种方式，我没有手动执行实现过，只是知道大致的实现原理。</p>
+<p>在<code>SVN</code>的版本库里面，有个<code>hooks</code>，在里面，有好几个<code>*.tmpl</code>文件，找到其中<code>post-commit.tmpl</code>这个文件，这个钩子。大概的意思是在<code>svn</code>提交的时候，会触发该脚本。</p>
+<p>在触发改脚本的时候，我们就可以在其中处理一下我们需要的时间，比如：将代码推送发布到<code>WEB</code>服务器等。</p>
+<p>当时配置过<code>windows</code>上面的钩子，同步的<code>WEB</code>服务器，在<code>linux</code>上，由于各种账号权限的问题，配置起来非常麻烦，因此没有成功。</p>
+<h6 id="主动更新">主动更新</h6>
+<p>主动更新的原理，就是执行<code>svn up</code>，目的是要实现自动更新。</p>
+<ul>
+<li>
+<p>crontab 定时任务<br>
+这种新式比较简单，只需要在<code>crontab</code>中，配置定时执行<code>svn update</code>命令即可：<br>
+<code>*/5 * * * * svn up /project/path</code><br>
+就是每5分钟，执行指定目录更新一次。</p>
+</li>
+<li>
+<p>web页面，手动执行更新<br>
+通过<code>crontab</code>自动更新，总会有延迟的存在，如果想在<code>svn</code>提交之后，就能立即看到效果，而又没有通过钩子配置自动更新，而且也不能开放服务器的登录权限的话，只能通过<code>web</code>编写页面操作<code>svn up</code>,通过<code>PHP</code>执行<code>Linux</code>命令，主要的函数：<code>shell_exec()</code>。可以写个<code>WEB</code>应用，通过PHP执行<code>shell_exec()</code>，来执行<code>SVN</code>的更新，并可以将结果动态的展示给用户。该形式在我的<code>git</code>项目里，有个表哥（BigPao）提供的应用。</p>
+</li>
+</ul>
+<h4 id="遇到问题">遇到问题</h4>
+<ul>
+<li>
+<p>在通过<code>shell_exec()</code>执行更新的时候，总是不成功，返回结果：<br>
+<code>Updating '/project/paty'：</code>，但是实际并没有执行成功，查看错误日志，<br>
+提示：<code>/root/.subversion</code>没有权限<br>
+该问题的原因是因为一般的<code>WEB</code>应用，都是通过<code>www</code>用户组运行的，该用户，是没有权限操作<code>/root/</code>用户的文件的，因此在执行<code>svn up</code>等操作的时候，需要制定<code>config-dir</code>参数：<br>
+<code>svn update --config-dir /project3/.subversion /project3/</code></p>
+</li>
+<li>
+<p><code>shell_exec()</code>执行更新，报错：svn: E155037: 以前的操作没有完成；如果它被中断，请执行“svn cleanup”<br>
+该问题，是由于<code>svn</code>本地库遇到了一点问题，需要手动执行<code>svn cleanup</code>，但是如果通过在服务器执行<code>svn cleanup</code>的话，会将项目目录下的：<code>/project/.svn/tmp</code>文件的用户组改为：<code>root</code>。这样，在通过<code>shell_exec()</code>执行更新的时候，就会提醒：<br>
+<code>svn: E000013: 无法从模版“/project/.svn/tmp/svn-XXXXXX”创建临时文件: 权限不够</code>。<br>
+因此需要通过PHP来执行<code>svn cleanup</code>：</p>
+</li>
+</ul>
+<pre><code>svn cleanup --config-dir /project3/.subversion /project3/;
+svn update --config-dir /project3/.subversion /project3/;
+sleep 1;
+</code></pre>
+<ul>
+<li>在实际的项目开发过程中，有可能会用<code>FTP</code>上传了某个文件，如果该文件，不是<code>www</code>用户组的文件的话，再<code>shell_exec()</code>执行更新的时候，也会同样报无权限的错误，因此需要将上面的语句，再次优化：</li>
+</ul>
+<pre><code>chown -hR www:www /project3/;
+svn cleanup --config-dir /project3/.subversion /project3/;
+svn update --config-dir /project3/.subversion /project3/;
+sleep 1;
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Centos安装最新版SVN]]></title>
+        <id>https://forkun.github.io/post/ruVdRms-r/</id>
+        <link href="https://forkun.github.io/post/ruVdRms-r/">
+        </link>
+        <updated>2017-04-06T07:29:23.000Z</updated>
+        <summary type="html"><![CDATA[<h4 id="概述">概述</h4>
+<p>环境：<br>
+Centos-6.8<br>
+SVN-1.9.5<br>
+<code>Centos</code>默认的<code>SVN</code>版本是1.7，虽然现在<code>Centos</code>版本升级到7了，但是<code>yum</code>库中的<code>SVN</code>版本依然没有更新，这样对使用新版的<code>SVN</code>版本的代码就造成了困扰。<br>
+比如：我们在<code>windows</code>上，试用的SVN版本是1.9版本的，在其他linux服务器上使用的<code>SVN</code>版本如果低于1.9的话，<code>SVN UP</code>时候，会提示需要升级<code>SVN</code>版本。</p>
+]]></summary>
+        <content type="html"><![CDATA[<h4 id="概述">概述</h4>
+<p>环境：<br>
+Centos-6.8<br>
+SVN-1.9.5<br>
+<code>Centos</code>默认的<code>SVN</code>版本是1.7，虽然现在<code>Centos</code>版本升级到7了，但是<code>yum</code>库中的<code>SVN</code>版本依然没有更新，这样对使用新版的<code>SVN</code>版本的代码就造成了困扰。<br>
+比如：我们在<code>windows</code>上，试用的SVN版本是1.9版本的，在其他linux服务器上使用的<code>SVN</code>版本如果低于1.9的话，<code>SVN UP</code>时候，会提示需要升级<code>SVN</code>版本。</p>
+<!-- more -->
+<h4 id="安装or升级过程">安装OR升级过程</h4>
+<p>将默认的<code>YUM</code>库中的<code>SVN</code>源替换掉，然后执行<code>yum install subversion</code>即可安装成功<code>SVN</code>的最新版本</p>
+<h5 id="第1步">第1步</h5>
+<p>在<code>yum</code>库中创建<code>svn</code>的远程源文件:<code>vim /etc/yum.repos.d/wandisco-svn.repo</code>。<br>
+在文件中填充内容</p>
+<pre><code>[WandiscoSVN]
+name=Wandisco SVN Repo
+baseurl=http://opensource.wandisco.com/centos/$releasever/svn-1.9/RPMS/$basearch/
+enabled=1
+gpgcheck=0
+</code></pre>
+<p>目前最新的<code>svn</code>版本是1.9版本，如果需要指定<code>svn</code>的版本号，只需要到<a href="http://opensource.wandisco.com/centos/">http://opensource.wandisco.com/centos/</a>中，寻找自己系统对应的版本，对应的<code>svn</code>版本即可。</p>
+<h5 id="第2步">第2步</h5>
+<p>清除目前自己服务器上的<code>svn</code>：<code>yum remove subversion*</code><br>
+更新<code>yum</code>库：<code>yum clean all</code><br>
+安装<code>svn</code>：<code>yum install subversion</code></p>
+<h5 id="第3步">第3步</h5>
+<p>确定<code>svn</code>版本是最新版，并且安装成功：<code>svn --versioni</code></p>
+<pre><code>[root@localhost /]# svn --version
+svn，版本 1.9.5 (r1770682)
+   编译于 Dec  1 2016，13:25:01 在 x86_64-redhat-linux-gnu
 
-MODIFY gt_head FROM gs_head TRANSPORTING chkbox WHERE chkbox &lt;&gt; 'X' .
-</code></pre>
-<h3 id="内表合并merge">内表合并（merge）</h3>
-<p>将2个结构相同的内表进行合并</p>
-<pre><code>append lines of itab1 to itab2.
+Copyright (C) 2016 The Apache Software Foundation.
+This software consists of contributions made by many people;
+see the NOTICE file for more information.
+Subversion is open source software, see http://subversion.apache.org/
 
-append lines of itab1 to itab3.
-append lines of itab2 to itab3.
+可使用以下的版本库访问模块: 
+
+* ra_svn : 使用 svn 网络协议访问版本库的模块。  - 使用 Cyrus SASL 认证
+  - 处理“svn”方案
+* ra_local : 访问本地磁盘的版本库模块。
+  - 处理“file”方案
+* ra_serf : Module for accessing a repository via WebDAV protocol using serf.
+  - using serf 1.3.7 (compiled with 1.3.7)
+  - 处理“http”方案
+  - 处理“https”方案
+
+The following authentication credential caches are available:
+
+* Plaintext cache in /root/.subversion
+* Gnome Keyring
+* GPG-Agent
 </code></pre>
-<h3 id="删除内表重复项">删除内表重复项</h3>
-<p>做删除重复项动作之前，<strong>先对内表进行排序</strong>。</p>
-<pre><code># 根据某个字段的重复规则删除
-DELETE ADJACENT DUPLICATES FROM itab COMPARING /BIC/ZCUS/BIC/ZXFRQ.
-# 根据所有字段的重复规则删除
-DELETE ADJACENT DUPLICATES FROM itab COMPARING ALL FIELDS.
-</code></pre>
+<p>到此步骤，说明<code>svn-1.9.5</code>版本已经安装成功</p>
+<h4 id="其他命令">其他命令</h4>
+<ul>
+<li>查看某个用户的<code>svn</code>提交记录：<code>svn log path -l 10 |sed -n '/user/,/-----$/ p'</code></li>
+</ul>
+<blockquote>
+<p>在<code>path</code>目录中，查看最近的10条提交记录中，<code>user</code>的提交操作。返回的数据可能小于10，因为10条提交，不一定全部都是<code>user</code>提交的。</p>
+</blockquote>
 ]]></content>
     </entry>
 </feed>
